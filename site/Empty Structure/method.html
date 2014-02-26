@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Information search: method</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/colorbox.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="../bootstrap/js/html5shiv.js"></script>
+          <script src="../bootstrap/js/respond.min.js"></script>
+        <![endif]-->
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    </head>
+    <body>
+        <script type="text/javascript" src="includes/navbar.js">  </script>
+        
+        <div class="container">
+
+
+            
+            <div class="row">
+
+        <div class="col-8 col-sm-12 col-lg-8">
+
+<h1>Method</h1>
+
+<p>Some text</p>
+
+          
+        </div>  
+
+    </div>
+
+            <hr>
+
+            <footer>
+                <p>&copy; Company 2012</p>
+            </footer>
+
+        </div> <!-- /container -->
+        
+        <!-- This contains the hidden content for inline calls -->
+        <!--
+        <div style='display:none'>
+			<div id='appendixA' style='padding:10px; background:#fff;'>
+			<TABLE CELLPADDING=5 CELLSPACING=0 border=1>
+	<TBODY>
+		<tr valign='top'>
+			<th>Term</th>
+			<th>Definition</th>
+		</tr>
+		<tr valign='top'>
+			<td>Culprit</td>
+			<td>The actual person who had committed the crime.</td>
+		</tr>
+		<tr valign='top'>
+			<td>Accused</td>
+			<td>A person who is suspected to have committed the crime. In this
+				experiment, the accused in each case is given a name. This person
+				may or may not be the culprit.</td>
+		</tr>
+		<tr valign='top'>
+			<td>Witness</td>
+			<td>Someone who has information regarding the case.</td>
+		</tr>
+	</TBODY>
+</TABLE>
+			</p>
+		</div>
+        -->
+		
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+        <script src="../js/main.js"></script>
+        <script src="../js/vendor/jquery.shorten.1.0.js"></script>
+        <script src="../js/vendor/jquery.colorbox-min.js"></script>
+        <!-- <script src="../js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script> -->
+        
+        <script type="text/javascript">
+            
+        $(document).ready(function() {
+            /*
+            $(".breakout").colorbox({iframe:true, width:"80%", height:"80%"});
+            $(".SPSSinstructions").shorten({
+                "showChars" : 0,
+                "moreText"  : "Show SPSS instructions",
+                "lessText"  : "Hide SPSS instructions",
+                "ellipsesText"  : "",
+            });
+            */
+            var stickyNavTop = $('.navbar').offset().top;  
+            var stickyNav = function(){  
+                var scrollTop = $(window).scrollTop();  
+                if (scrollTop > stickyNavTop) {   
+                    $('.navbar').addClass('navbar-fixed-top');  
+                } else {  
+                    $('.navbar').removeClass('navbar-fixed-top');   
+                }  
+            };  
+              
+            stickyNav();  
+              
+            $(window).scroll(function() {  
+                stickyNav();  
+            });  
+     
+        });
+        </script>
+
+<!--
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+
+
+                <script type="text/javascript">
+// $(document).ready(function() { var showChar = 100; var ellipsestext = "..."; var moretext = "more"; var lesstext = "less"; $('.more').each(function() { var content = $(this).html(); if(content.length > showChar) { var c = content.substr(0, showChar); var h = content.substr(showChar-1, content.length - showChar); var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>'; $(this).html(html); } }); $(".morelink").click(function(){ if($(this).hasClass("less")) { $(this).removeClass("less"); $(this).html(moretext); } else { $(this).addClass("less"); $(this).html(lesstext); } $(this).parent().prev().toggle(); $(this).prev().toggle(); return false; }); });
+$(document).ready(
+function() { 
+    var showInstructions = '<a class="SPSSinstructionsButton" href="#">SPSS</a>'; 
+    var closeInstructions = '<a class="SPSSinstructionsButton" href="#">Close SPSS</a>';
+    $('.SPSSinstructions').each(function() {
+        var instr = $(this).html();
+        var html = "hello" + showInstructions + "<span class=\"SPSSinstructionsHidden"> + instr + "<\span>";
+        $(this).html(html); 
+    });
+    $(".SPSSinstructionsButton").click(function(){
+        if($(this).hasClass("SPSSinstructionsShown")) { 
+            $(this).removeClass("SPSSinstructionsShown"); 
+            $(this).html(showInstructions);
+        } else { 
+            $(this).addClass("SPSSinstructionsShown");
+            $(this).html(closeInstructions); 
+        } 
+        $(this).parent().prev().toggle(); 
+        $(this).prev().toggle(); 
+        return false; 
+    }); 
+});
+
+        </script>
+-->
+    </body>
+</html>

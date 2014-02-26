@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Information search: results</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/colorbox.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="../bootstrap/js/html5shiv.js"></script>
+          <script src="../bootstrap/js/respond.min.js"></script>
+        <![endif]-->
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    </head>
+    <body>
+        <script type="text/javascript" src="includes/navbar.js">  </script>
+        
+        <div class="container">
+
+        <div class="row">
+        <div class="col-8 col-sm-12 col-lg-8">
+
+<h1>Results</h1>
+
+<p><h3>Word interpretation: Comparison of rowers and non-rowers</h3></p>
+
+<p>Before analysing the determinants of biased word-interpretation in 
+rowers, we need to assess whether rowers actually have a biased 
+understanding of the ambiguous words compared to non-rowers. If this is
+the case, we would expect the proportion of words interpreted with a 
+rowing-related meaning to be higher for rowers as compared to 
+non-rowers. To assess determine whether this is indeed the case, we 
+compare Proportion_Rowing between the rowing and control participants 
+with the help of an ANOVA.<br />
+<a class='btn SPSSinstructions' href="SPSS/img/Results_Anova.png">SPSS: ANOVA</a></p>
+</p>
+
+<p>This analysis yields a significant difference between the two groups, 
+where rowers name more words from the rowing context compared to the 
+control group, F(1,240) = 36.755, p&lt;.001.</p>
+
+<p>When conducting an ANOVA, it is good practice to ascertain whether
+the <a class="assumptions" href="../assumptions/ANOVA.html">assumptions</a> 
+underlying the analysis are valid. The Normality assumption can be 
+checked with a Shapiro-Wilks test. If we look at Proportion_Rowing, we 
+assert that the variable is not normally distributed in either of the 
+two groups, (W=.927, df=215, p&lt;.001 for rowers and W=.427, 
+df=27, p&lt;.001 for non-rowers).</p>
+<p>While an ANOVA is relatively robust against (small) deviations from
+Normality, it may be a good idea to check the robustness of the results
+by repeating the analysis with a test which does not depend on the 
+Normality assumption. In this case, we can use a Mann-Whitney U-test. 
+This test uses the rank-ordered values in
+the sample rather than the original (metric) values and therefore compares if one of 
+the group has higher ranks on average. Here, our results get confirmed, and we find
+again a significant difference between the groups. 
+U=593.0, Z=-6.793, p&lt;.001.<br />
+<a class='btn SPSSinstructions' href="SPSS/img/Results_Mann-W-U.png">SPSS: Mann-Whitney</a></p>
+
+<p><h3>Initial checks</h3></p>
+
+<p>We will now focus more closely on the factors that affect the biased interpretation of ambiguous words in rowers. In many situations, it is helpful to start with some preliminary correlations in order to assess the relations between the variables in the dataset. We use bivariate correlations between all possible combinations of our four independent and the dependent variable. First, we need to filter out the control participants, since these don’t have any values for the variables that we’d like to examine. We yield the following table:</p>
+
+<p>&nbsp;</p>
+
+<table class="corr" width="100%">
+<col width="100/6%"><col width="100/6%"><col width="100/6%"><col width="100/6%"><col width="100/6%"><col width="100/6%">
+  <tr class="corr" height="60">
+    <th class="corr_nr">N=215</td>
+    <th class="corr">Proportion_
+    	<br>Rowing</th>
+    <th class="corr">Age</th>
+    <th class="corr">Rowing_Experience_
+    	<br>Years</th>
+    <th class="corr">Days_Since_
+    	<br>Rowed</th>
+    <th class="corr">Times_PerWeek_
+    	<br>Rowed</th>
+  </tr>
+  <tr class="corr" height="60">
+  	<th class="corr">Proportion_
+    	<br>Rowing</th>
+    <td class="corr">---</td>
+    <td class="corr">R=-.098<br>
+      p&gt;.05</td>
+    <td class="corr" width="78">R=.037<br>
+      p&gt;.05</td>
+    <td class="corr" width="78">R=-.316<br>
+      p&lt;.001</td>
+    <td class="corr" width="78">R=.183<br>
+      p&lt;.01</td>
+  </tr>
+  <tr class="corr" height="60">
+    <th class="corr">Age</th>
+    <td class="corr" width="78">R=-.098<br>
+      p&gt;.05</td>
+    <td class="corr" width="78">---</td>
+    <td class="corr" width="78">R=.169<br>
+      p&lt;.05</td>
+    <td class="corr" width="78">R=.125<br>
+      p&gt;.05</td>
+    <td class="corr" width="78">R=-.264<br>
+      p&lt;.001</td>
+  </tr>
+  <tr class="corr" height="60">
+	<th class="corr">Rowing_Experience_
+    	<br>Years</th>
+    <td class="corr" width="78">R=.037<br>
+      p&gt;.05</td>
+    <td class="corr" width="78">R=.169<br>
+      p&lt;.05</td>
+    <td class="corr" width="78">---</td>
+    <td class="corr" width="78">R=.081<br>
+      p&gt;.05</td>
+    <td class="corr" width="78">R=-.080<br>
+      p&gt;.05</td>
+  </tr>
+  <tr class="corr" height="60">
+    <th class="corr">Days_Since_
+    	<br>Rowed</th>
+    <td class="corr" width="78">R=-.316<br>
+      p&lt;.001</td>
+    <td class="corr" width="78">R=.125<br>
+      p&gt;.05</td>
+    <td class="corr" width="78">R=.081<br>
+      p&gt;.05</td>
+    <td class="corr" width="78">---</td>
+    <td class="corr" width="78">R=-.182<br>
+      p&lt;.01</td>
+  </tr>
+  <tr class="corr" height="60">
+    <th class="corr">Times_PerWeek_
+    	<br>Rowed</th>
+    <td class="corr" width="78">R=.183<br>
+      p&lt;.01</td>
+    <td class="corr" width="78">R=-.264<br>
+      p&lt;.001</td>
+    <td class="corr" width="78">R=-.080<br>
+      p&gt;.05</td>
+    <td class="corr" width="78">R=-.182<br>
+      p&lt;.01</td>
+    <td class="corr" width="78">---</td>
+  </tr>
+</table>
+
+<p>&nbsp;</p>
+
+<p>Judging from these correlations, a more recent rowing experience causes people to name more rowing interpretations (R=-.316) and generally, higher rowing frequencies lead to more interpretations in the rowing context (R=.183).</p>
+
+<p>Additionally, we see that amongst our four predicting variables, Age correlates with Rowing_Experience_Years and Times_PerWeek_Rowed. Older people seem to have more experience (R=.169), but row less frequently (R=-.264). Lastly, the rowing frequency and the time since the last rowing experience are negatively correlated, meaning that more frequent rowers had more recent experiences (R=-.182). Highly correlated  predictor variables can give problems in a regression analysis, making it difficult to identify their unique relation with the dependent variable. However, these correlations are relatively moderate and so we can first take a look at the regression and some additional measures for collinearity.</p>
+
+<p> <a class='btn SPSSinstructions' href="SPSS/img/Results_Correlation.png">SPSS: Correlation</a></p>
+
+<p>&nbsp;</p>
+
+<p>It is also advisable to take a look at the distributions of all variables before conducting a regression. Therefore, we will now illustrate histograms for the four independent and the dependent variable in order to identify potential irregularities (e.g. variable has two extreme peaks and no values between).</p>
+
+<p><img src='img/Distr_Prop_Rowing.png' alt=' ' width='45%' /></p>
+<p><img src='img/Distr_Age.png' alt=' ' width='45%' />
+<img src='img/Distr_Exper.png' alt=' ' width='45%' /></p>
+<p><img src='img/Distr_Recency.png' alt=' ' width='45%' />
+<img src='img/Distr_Frequ.png' alt=' ' width='45%	' /></p>
+
+<p>All variables are skewed to the right, having many low values. However, this shouldn't be a problem for the analysis as the variables still comprise a decent range of values and don't pile up in just one place. Regarding the dependent variable Proportion_Rowing, many people do not mention a single rowing interpretation and there seems to be a single case with almost 80% of such words.</p>
+
+<p> <a class='btn SPSSinstructions' href="SPSS/img/Results_Explore_All.png">SPSS: Explore variables</a></p>
+
+<p>&nbsp;</p>
+
+<p><h2>Multiple regression</h2></p>
+
+<p><h3>Full regression</h3></p>
+
+<p>According to our theoretical model, we will test a regression of the following form:</p>
+
+<p><em>Proportion Rowing<sub>i</sub> = β<sub>0</sub> + β<sub>1</sub> Age<sub>i</sub> + β<sub>2</sub> Rowing_Experience_Years<sub>i</sub> + β<sub>3</sub> Days_Since_Rowed<sub>i</sub> + β<sub>4</sub> Times_PerWeek_Rowed<sub>i</sub> + ε<sub>i</sub></em></p>
+
+<p>We restrict our sample to subjects with Condition=’Rower’ (N=215). 
+
+<p> <a class='btn SPSSinstructions' href="SPSS/img/Results_Select_Cases.png">SPSS: Select Cases</a></p>
+
+Initially, we can just estimate a full regression with all independent (predictor) variables and no further concerns in order to get a starting point. In a following step, we can then eliminate predictors that do not significantly contribute to our model and are therefore unnecessary. It is also advisable to check if the assumptions of a linear regression are met with our analysis. Our regression yields the following general results:</p>
+
+<p>&nbsp;</p>
+
+<table width="100%">
+	<th>R</th><th>R Square</th><th>Adj. R Square</th><th>Std. Error of Estimate</th>
+      <tr>
+        <td>.345</td>
+        <td>.119</td>
+        <td>.102</td>
+        <td>15.92719</td>
+      </tr>
+</table>
+
+<p>&nbsp;</p>
+
+<table width="100%">
+	<th></th><th>Sum of Squares</th><th>df</th><th>Mean Square</th><th>F</th><th>Sig.</th>
+      <tr>
+        <td>Regression</td>
+        <td>7,038.455</td>
+        <td>4</td>
+        <td>1,759.614</td>
+        <td>6.936</td>
+        <td>.000</td>
+      </tr>
+      <tr>
+        <td>Residual</td>
+        <td>52,257.131</td>
+        <td>206</td>
+        <td>253.675</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Total</td>
+        <td>59,295.586</td>
+        <td>210</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+</table>
+
+<p>&nbsp;</p>
+
+<table width="100%">
+	<th>Coefficient</th><th>B</th><th>Std. Error</th><th>Beta</th><th>t</th><th>Sig.</th><th>Tolerance</th><th>VIF</th>
+      <tr>
+        <td>Constant</td>
+        <td>23.090</td>
+        <td>3.723</td>
+        <td></td>
+        <td>6.203</td>
+        <td>.000</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Age</td>
+        <td>-.054</td>
+        <td>.084</td>
+        <td>-.044</td>
+        <td>-.646</td>
+        <td>.519</td>
+        <td>.905</td>
+        <td>1.105</td>
+      </tr>
+      <tr>
+        <td>Rowing_Experience_Years</td>
+        <td>.114</td>
+        <td>.101</td>
+        <td>.075</td>
+        <td>1.125</td>
+        <td>.262</td>
+        <td>.966</td>
+        <td>1.035</td>
+      </tr>
+      <tr>
+        <td>Days_Since_Rowed</td>
+        <td>-1.392</td>
+        <td>.323</td>
+        <td>-.288</td>
+        <td>-4.307</td>
+        <td>.000</td>
+        <td>.958</td>
+        <td>1.043</td>
+      </tr>
+      <tr>
+        <td>Times_PerWeek</td>
+        <td>.612</td>
+        <td>.337</td>
+        <td>.125</td>
+        <td>1.814</td>
+        <td>.071</td>
+        <td>.906</td>
+        <td>1.103</td>
+      </tr>
+</table>
+
+<p>&nbsp;</p>
+
+<p>We interpret the results in the following way:<br>
+
+  The R Square value is .119, which is not overly high, but in the range of what you usually expect in the Social Sciences. It means we can predict about 12% of the variance in word interpretation with the help of our model. Since we’re using a multiple regression with more than one predictor variable here, we should also look at the adjusted R Square (.102). This value takes into account that the model has to do better due to the multiple sources for explanations and therefore decreases the values of the R Square according to the number of predictors.</p>
+  
+<p>The second table gives us a summary of the errors that are explained by the model and the amount that remains unexplained. We basically yield our R Square when we divide the errors explained by the regression (7,038.455) by the total sum of errors (59,295.131). With the help of the F-value (6.936, p&lt;.001), we can also see that our model makes a better prediction than the null model, which would just take the mean value of the dependent variable as prediction.</p>
+
+<p>The third table shows the predictors and whether they significantly contribute to the model. If we look at the t- and significance-values, we can see that the p-values for Age, Rowing_Experience_Years and Times_PerWeek are p&gt;.05. However, for Times_PerWeek the value is very close to this threshold. Strictly speaking, we can’t say that these two variables have an influence on the dependent variable that is significantly different from zero. Days_Since_Rowed is the only significant variable with a B-value of -1.392, which tells us that the further your recent rowing experience has been in the past, the fewer words you associate with rowing. We can interpret the B-value in the following way: holding everything else constant, every additional day that the subject hasn’t rowed causes 1.392% less word associations with rowing.</p>
+
+<p>As already indicated, it is worth checking our independent variables, their correlation and their individual relation with the dependent variable to detect potential misinterpretations or further areas for investigation.</p>
+
+<p> <a class='btn SPSSinstructions' href="SPSS/img/Results_Regression_Enter.png">SPSS: Full Regression</a></p>
+
+<p>&nbsp;</p>
+
+<p><h3>Reduced regression</h3></p>
+
+<p>We can use the backwards approach in SPSS, where the software stepwise excludes variables that are not necessarily needed in the model. If some variables are removed, others might get different estimates and significances for the newer, slimmer model. By using the backwards method, we yield:</p>
+
+<p>&nbsp;</p>
+<table width="100%">
+    <th>R</th>
+    <th>R Square</th>
+    <th>Adj. R Square</th>
+    <th>Std. Error of Estimate</th>
+  <tr>
+    <td>.335</td>
+    <td>.112</td>
+    <td>.104</td>
+    <td>15.90800</td>
+  </tr>
+</table>
+
+<p>&nbsp;</p>
+
+<table width="100%">
+    <th></th>
+    <th>Sum of Squares</th>
+    <th>df</th>
+    <th>Mean Square</th>
+    <th>F</th>
+    <th>Sig.</th>
+  <tr>
+    <td>Regression</td>
+    <td>6,658.153</td>
+    <td>2</td>
+    <td>3,329.076</td>
+    <td>13.155</td>
+    <td>.000</td>
+    </tr>
+  <tr>
+    <td>Residual</td>
+    <td>52,637.433</td>
+    <td>206</td>
+    <td>253.675</td>
+    <td></td>
+    <td></td>
+    </tr>
+  <tr>
+    <td>Total</td>
+    <td>59,295.586</td>
+    <td>210</td>
+    <td></p></td>
+    <td></td>
+    <td></td>
+    </tr>
+</table>
+
+<p>&nbsp;</p>
+
+<table width="100%">
+    <th>Coefficient</th>
+    <th>B</th>
+    <th>Std. Error</th>
+    <th>Beta</th>
+    <th>t</th>
+    <th>Sig.</th>
+    <th>Tolerance</th>
+    <th>VIF</th>
+  <tr>
+    <td>Constant</td>
+    <td>22.065</td>
+    <td>2.216</td>
+    <td></td>
+    <td>9.955</td>
+    <td>.000</td>
+    <td></td>
+    <td></td>
+    </tr>
+  <tr>
+    <td>Days_Since_Rowed</td>
+    <td>-1.381</td>
+    <td>.321</td>
+    <td>-.286</td>
+    <td>-4.298</td>
+    <td>.000</td>
+    <td>.967</td>
+    <td>1.034</td>
+    </tr>
+  <tr>
+    <td>Times_PerWeek</td>
+    <td>.642</td>
+    <td>.326</td>
+    <td>.131</td>
+    <td>1.968<</td>
+    <td>.050</td>
+    <td>.967</td>
+    <td>1.034</td>
+    </tr>
+</table>
+
+<p>&nbsp;</p>
+
+<p>We obtain similar results to the full regression, although the p-value for Times_PerWeek is now exactly on the border of significance. Note that the estimates of the effects of predictors, and their significance, are affected by the other predictors in a model when the predictors are not completely independent. Using a backwards stepwise procedure, we have arrived at a simpler model, which should be preferred to a more complex one if the complexity is not justified by additional explanatory power.  Additional options are, for example, to modify some of the independent variables or to calculate a regression for relational factors or non-linear relationships.</p>
+
+<p> <a class='btn SPSSinstructions' href="SPSS/img/Results_Regression_Back.png">SPSS: Reduced Regression</a></p>
+
+<p>&nbsp;</p>
+
+<p><h2>Regression assumptions</h2></p>
+
+<p>In this section, we will focus on the full regression of the form:</p>
+
+<p><em>Proportion Rowing<sub>i</sub> = β<sub>0</sub> + β<sub>1</sub> Age<sub>i</sub> + β<sub>2</sub> Rowing_Experience_Years<sub>i</sub> + β<sub>3</sub> Days_Since_Rowed<sub>i</sub> + β<sub>4</sub> Times_PerWeek_Rowed<sub>i</sub> + ε<sub>i</sub></em></p>
+
+<p>&nbsp;</p>
+
+<p><h3>Linearity</h3></p>
+
+<p>Let's take a look at the assumptions of the regression and whether there could be violations. We'll start off very basically by examining whether we can assume a linear relationship between dependent and independent variables. Nonlinearity is usually most evident in a plot of the observed versus predicted values or a plot of residuals versus predicted values, which are a part of our regression output. However, linearity is hard to detect and one should always try alternative models if they match the theoretic assumptions about the relations of the variables.</p>
+
+<p><img src='img/Obs_Pred.png' alt=' ' width='45%' />
+<img src='img/Pred_Resid.png' alt=' ' width='45%' /></p>
+
+<p>The points should be symmetrically distributed around a diagonal line in the left plot or in a circular fashion around the centre in the right plot. Look carefully for evidence of a "bowed" pattern, indicating that the model makes systematic errors whenever it is making unusually large or small predictions. The model makes obviously wrong predictions for those people who do not mention a single rowing interpretation. We can also see that the standardized predicted value for one case is particularly odd with a value of about -4.</p>
+
+<p>&nbsp;</p>
+
+<h3>Predictor variables</h3>
+
+<p>You can explore the values of the independent variables in order to check if you have a proper range of values covered (e.g. take care that there is no particular age group missing). Histograms are helpful to examine these things:</p>
+
+<p><img src='img/Distr_Age.png' alt=' ' width='45%' />
+<img src='img/Distr_Exper.png' alt=' ' width='45%' /></p>
+<p><img src='img/Distr_Recency.png' alt=' ' width='45%' />
+<img src='img/Distr_Frequ.png' alt=' ' width='45%	' /></p>
+
+<p>With the help of the Kolmogorov-Smirnoff and Shapiro-Wilk test, we can assert that neither of these variables is normally distributed. They all are skewed to the right with the Days_Since_Rowed having a peculiar peak at the value of 7. Perhaps many participants participated in the study just before or just after their regular weekly rowing day.</p>
+
+<p>&nbsp;</p>
+
+<h3>Multicollinearity</h3>
+
+<p>We have included the tolerance and VIF values in our regression tables, which do not indicate that there is a major problem with our predictors. Tolerance and VIF (1/tolerance) should be close to 1. In order to explore multicollinearity some more, we can simply look at the correlations of our independent variables. As long as VIF&lt;5 (tolerance&gt;.20) there is no need for serious concern.</p>
+
+<p>&nbsp;</p>
+
+<h3>Regression errors</h3>
+
+<p>A regression model of good quality should have normally distributed, homoscedastic errors. For homoscedasticity and normally distributed errors, we can look at some plots. Usually, we get a plot of residuals vs. predicted values with our output (since we ticked the box in the regression) that can tell us about the relationship of those.</p>
+
+<p><img src='img/Pred_Resid.png' alt=' ' width='45%' />
+<img src='img/Distr_Resid.png' alt=' ' width='45%	' /></p>
+
+<p>The two plots suggest that the errors are not normally distributed and that there is potentially a problem with heteroscedasticity. The Shapiro-Wilk and Kosmogorov-Smirnoff test are both significant for the standardized residuals, indicating that these aren't normally distributed. However, except for the peak around -1 for the standardized residuals and the single case around -4 for the standardized predicted value, the plots do not look very unusual. This case on the far left hand side has a very low prediction according to our model for the dependent variable, but at the same time, the actual value for this subject is also low. Therefore, this case is not an outlier that produces a lot of error, but an outlier that gets an unusually low prediction compared to all other subjects. If we exclude this case from the analysis, the results aren't affected in any way.</p>
+
+<p>&nbsp;</p>
+
+<h2>Non-linear regressions</h2>
+
+<p>We could also check whether there is a non-linear, maybe quadratic relationship between the predictors and the dependent variable. One can frequently observe that variables which measure a certain timespan, such as age or experience, show peculiar behaviour for particularly high values. Therefore, we transform age and experience to control for quadratic effects. First, we centre these variables to reduce the collinearity between quadratic and non-quadratic variables (e.g. Age and Age2 would otherwise be highly correlated). Therefore, we create two new centred variables, for Age and Rowing_Experience_Years, where we subtract the mean (Variablecen=Variable-Mean(Variable)). Following this, we can square the new centred variables and add these to our regression (Variablesquared=Variablecen2).
+
+<table class="instr" width="350px">
+<col width="150px"><col width="50px"><col width="150px">
+	<tr>
+		<td class="instr"><p> <a class='btn SPSSinstructions' href="SPSS/img/Results_Descriptives.png">SPSS: Descriptives</a></p></td>
+        <td class="instr"></td>
+        <td class="instr"><p><a class='btn SPSSinstructions' href="SPSS/img/Results_Center.png">SPSS: Center Variables</a></p></td>
+    </tr>
+</table>
+
+This results in the following regression model:</p>
+
+<p>&nbsp;</p>
+
+<table width="100%">
+    <th>R</th>
+    <th>R Square</th>
+    <th>Adj. R Square</th>
+    <th>Std. Error of Estimate</th>
+  <tr>
+    <td>.369</td>
+    <td>.136</td>
+    <td>.111</td>
+    <td>15.84358</td>
+  </tr>
+</table>
+
+<p>&nbsp;</p>
+
+<table width="100%">
+    <th></th>
+    <th>Sum of Squares</th>
+    <th>df</th>
+    <th>Mean Square</th>
+    <th>F</th>
+    <th>Sig.</th>
+  <tr>
+    <td>Regression</td>
+    <td>8,078.707</td>
+    <td>6</td>
+    <td>1,347.951</td>
+    <td>5.370</td>
+    <td>.000</td>
+    </tr>
+  <tr>
+    <td>Residual</td>
+    <td>51,207.879</td>
+    <td>204</td>
+    <td>251.019</td>
+    <td></td>
+    <td></td>
+    </tr>
+  <tr>
+    <td>Total</td>
+    <td>59,295.586</td>
+    <td>210</td>
+    <td></p></td>
+    <td></td>
+    <td></td>
+    </tr>
+</table>
+
+<p>&nbsp;</p>
+
+<table width="100%">
+    <th>Coefficient</th>
+    <th>B</th>
+    <th>Std. Error</th>
+    <th>Beta</th>
+    <th>t</th>
+    <th>Sig.</th>
+    <th>Tolerance</th>
+    <th>VIF</th>
+  <tr>
+    <td>Constant</td>
+    <td>23.935</td>
+    <td>2.517</td>
+    <td></td>
+    <td>9.511</td>
+    <td>.000</td>
+    <td></td>
+    <td></td>
+    </tr>
+  <tr>
+    <td>Age</td>
+    <td>-.040</td>
+    <td>.117</td>
+    <td>-.033</td>
+    <td>-.340</td>
+    <td>.734</td>
+    <td>.461</td>
+    <td>2.171</td>
+    </tr>
+  <tr>
+    <td>Age<sup>2</sup></td>
+    <td>-.001</td>
+    <td>.006</td>
+    <td>-.021</td>
+    <td>-.228</td>
+    <td>.820</td>
+    <td>.485</td>
+    <td>2.060</td>
+    </tr>
+  <tr>
+    <td>Rowing_Experience_Years</td>
+    <td>.472</td>
+    <td>.203</td>
+    <td>.310</td>
+    <td>2.326</td>
+    <td>.021</td>
+    <td>.239</td>
+    <td>4.189</td>
+    </tr>
+  <tr>
+    <td>Rowing_Experience_Years<sup>2</sup></td>
+    <td>-.012</td>
+    <td>.006</td>
+    <td>-.270</td>
+    <td>-2.028</td>
+    <td>.044</td>
+    <td>.238</td>
+    <td>4.198</td>
+    </tr>
+  <tr>
+    <td>Days_Since_Rowed</td>
+    <td>-1.332</td>
+    <td>.323</td>
+    <td>-.276</td>
+    <td>4.128</td>
+    <td>.000</td>
+    <td>.950</td>
+    <td>1.052</td>
+    </tr>
+  <tr>
+    <td>Times_PerWeek_Rowed</td>
+    <td>.573</td>
+    <td>.337</td>
+    <td>.117</td>
+    <td>1.704</td>
+    <td>.090</td>
+    <td>.900</td>
+    <td>1.111</td>
+    </tr>
+</table>
+
+<p>&nbsp;</p>
+
+
+<p>Interestingly, when controlling for quadratic effects, experience, but not age, becomes significant. The B-values suggest that there is a declining effect for high values of experience, since the Rowing_Experience_Years2 has a negative sign and becomes more influential with larger values. There is still considerable collinearity between experience and its squared equivalent, but a rule-of-thumb suggests that Tolerance values greater than 0.2, respectively VIF smaller 5, indicate acceptable collinearity. If we try the same regression with non-centred values, the collinearity will not fulfil these criteria. The backwards regression can help us to cancel out unnecessary variables and the model reduces to:</p>
+
+<p>&nbsp;</p>
+
+<table width="100%">
+    <th>R</th>
+    <th>R Square</th>
+    <th>Adj. R Square</th>
+    <th>Std. Error of Estimate</th>
+  <tr>
+    <td>.366</td>
+    <td>.134</td>
+    <td>.117</td>
+    <td>15.78742</td>
+  </tr>
+</table>
+
+<p>&nbsp;</p>
+
+<table width="100%">
+    <th></th>
+    <th>Sum of Squares</th>
+    <th>df</th>
+    <th>Mean Square</th>
+    <th>F</th>
+    <th>Sig.</th>
+  <tr>
+    <td>Regression</td>
+    <td>7,951.607</td>
+    <td>4</td>
+    <td>1,987.902</td>
+    <td>7.976</td>
+    <td>.000</td>
+    </tr>
+  <tr>
+    <td>Residual</td>
+    <td>51,343.979</td>
+    <td>206</td>
+    <td>249.243</td>
+    <td></td>
+    <td></td>
+    </tr>
+  <tr>
+    <td>Total</td>
+    <td>59,295.586</td>
+    <td>210</td>
+    <td></p></td>
+    <td></td>
+    <td></td>
+    </tr>
+</table>
+
+<p>&nbsp;</p>
+
+<table width="100%">
+    <th>Coefficient</th>
+    <th>B</th>
+    <th>Std. Error</th>
+    <th>Beta</th>
+    <th>t</th>
+    <th>Sig.</th>
+    <th>Tolerance</th>
+    <th>VIF</th>
+  <tr>
+    <td>Constant</td>
+    <td>23.499</td>
+    <td>2.315</td>
+    <td></td>
+    <td>10.152</td>
+    <td>.000</td>
+    <td></td>
+    <td></td>
+    </tr>
+  <tr>
+    <td>Rowing_Experience_Years</td>
+    <td>.458</td>
+    <td>.201</td>
+    <td>.301</td>
+    <td>2.276</td>
+    <td>.024</td>
+    <td>.241</td>
+    <td>4.152</td>
+    </tr>
+  <tr>
+    <td>Rowing_Experience_Years<sup>2</sup></td>
+    <td>-.012</td>
+    <td>.006</td>
+    <td>-.269</td>
+    <td>-2.022</td>
+    <td>.044</td>
+    <td>.238</td>
+    <td>4.196</td>
+    </tr>
+  <tr>
+    <td>Days_Since_Rowed</td>
+    <td>-1.349</td>
+    <td>.321</td>
+    <td>-.279</td>
+    <td>4.205</td>
+    <td>.000</td>
+    <td>.955</td>
+    <td>1.047</td>
+    </tr>
+  <tr>
+    <td>Times_PerWeek_Rowed</td>
+    <td>.626</td>
+    <td>.325</td>
+    <td>.128</td>
+    <td>1.928</td>
+    <td>.055</td>
+    <td>.959</td>
+    <td>1.042</td>
+    </tr>
+</table>
+
+<p>&nbsp;</p>
+
+<p>Although the Times_PerWeek_Rowed doesn’t quite meet the .05 significance-barrier, we yield a comprehensive and coherent model to describe the interpretation of words in a rowing context. According to our estimations, experience leads people to more frequently interpret words in a rowing context, however, for particularly low and high values of experience, this effect is weakened through the negative quadratic term. Additionally, the time that has passed since the last rowing experience is crucial and people who have rowed more recently, interpret more words in a rowing context. Furthermore, the rowing frequency of people is decisive and causes more frequent rowers to use more rowing interpretations.</p>
+
+  
+  <!--
+             <p>
+            <div class="SPSSinstructions">
+            <p>
+            You can click on a few buttons and get a load of output. You'll have to search extensively, but in the end you will
+            find the one number you actually need.
+            </p>
+            </div>
+            </p>
+            
+            <p>
+            <div class="note">
+            <h1>Assumptions</h1>
+            <p>And this is a note</p>
+            </div>
+            
+            </p>
+            -->        </p>
+        </div>  
+
+    </div>
+
+            <hr>
+
+            <footer>
+                <p>&copy; Company 2012</p>
+            </footer>
+
+        </div> <!-- /container -->
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+        <script src="../js/main.js"></script>
+        <script src="../js/vendor/jquery.shorten.1.0.js"></script>
+        <script src="../js/vendor/jquery.colorbox-min.js"></script>
+        <script src="../js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        
+        <script type="text/javascript">
+        $(document).ready(function() {
+     
+            $(".SPSSinstructions").colorbox({iframe:true, width:"80%", height:"80%"});
+            $(".assumptions").colorbox({iframe:true, width:"50%", height:"50%"});
+            
+            var stickyNavTop = $('.navbar').offset().top;  
+            var stickyNav = function(){  
+                var scrollTop = $(window).scrollTop();  
+                if (scrollTop > stickyNavTop) {   
+                    $('.navbar').addClass('navbar-fixed-top');  
+                } else {  
+                    $('.navbar').removeClass('navbar-fixed-top');   
+                }  
+            };  
+              
+            stickyNav();  
+              
+            $(window).scroll(function() {  
+                stickyNav();  
+            });  
+     
+        });
+        </script>
+
+<!--
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+
+
+                <script type="text/javascript">
+// $(document).ready(function() { var showChar = 100; var ellipsestext = "..."; var moretext = "more"; var lesstext = "less"; $('.more').each(function() { var content = $(this).html(); if(content.length > showChar) { var c = content.substr(0, showChar); var h = content.substr(showChar-1, content.length - showChar); var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>'; $(this).html(html); } }); $(".morelink").click(function(){ if($(this).hasClass("less")) { $(this).removeClass("less"); $(this).html(moretext); } else { $(this).addClass("less"); $(this).html(lesstext); } $(this).parent().prev().toggle(); $(this).prev().toggle(); return false; }); });
+$(document).ready(
+function() { 
+    var showInstructions = '<a class="SPSSinstructionsButton" href="#">SPSS</a>'; 
+    var closeInstructions = '<a class="SPSSinstructionsButton" href="#">Close SPSS</a>';
+    $('.SPSSinstructions').each(function() {
+        var instr = $(this).html();
+        var html = "hello" + showInstructions + "<span class=\"SPSSinstructionsHidden"> + instr + "<\span>";
+        $(this).html(html); 
+    });
+    $(".SPSSinstructionsButton").click(function(){
+        if($(this).hasClass("SPSSinstructionsShown")) { 
+            $(this).removeClass("SPSSinstructionsShown"); 
+            $(this).html(showInstructions);
+        } else { 
+            $(this).addClass("SPSSinstructionsShown");
+            $(this).html(closeInstructions); 
+        } 
+        $(this).parent().prev().toggle(); 
+        $(this).prev().toggle(); 
+        return false; 
+    }); 
+});
+
+        </script>
+-->
+    </body>
+</html>

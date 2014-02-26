@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Information search: results</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/colorbox.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="../bootstrap/js/html5shiv.js"></script>
+          <script src="../bootstrap/js/respond.min.js"></script>
+        <![endif]-->
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    </head>
+    <body>
+        <script type="text/javascript" src="includes/navbar.js">  </script>
+        
+        <div class="container">
+
+        <div class="row">
+        <div class="col-8 col-sm-12 col-lg-8">
+
+<h1>Results</h1>
+
+<p>The variables of interest in this study are population receptive 
+field size (pRF), visual acuity and cortical thickness. The population 
+receptive field size is the amount of visual space a population of 
+neurons is capable of representing. The population here refers to the 
+neurons in a particular voxel of the scan. To model this, we iteratively 
+fit a Gaussian curve at each voxel, and the size of this Gaussian curve 
+corresponds to the pRF size.</p>
+
+<p>Visual acuity is the acuteness (or clearness) of vision. This is 
+dependent upon factors relating to the eye. All participants had their 
+vision corrected to normal throughout the course of this experiment 
+either via glasses or contact lenses, and so any remaining variation in 
+this measurement has been posited to be constrained by the functional 
+architecture of primary visual cortex (Duncan and Boynton, 2003).</p>
+
+<p>Cortical thickness corresponds to the thickness of the cortical 
+sheet, that is, grey matter. These measurements are generated during 
+the automated cortical reconstruction process in FreeSurfer, and are 
+calculated as the distance between the white matter and pial 
+surface.</p>
+
+<p>Each of these measures are considered across visual eccentricity, 
+which is a measurement of distance from fixation along the horizontal 
+horopter, expressed in degrees of visual angle.</p>
+
+<p>Plotting the relevant data can be a useful first stage in analysis, 
+and will help you identify whether there are any issues with the data. 
+These have been generated for you.<br />
+<a class='btn SPSSinstructions' 
+href="SPSS/VisualAcuityVsEcc.html">Visual Acuity Vs Ecc</a>
+<a class='btn SPSSinstructions' 
+href="SPSS/pRFvsEcc.html">pRFvsEcc</a>
+<a class='btn SPSSinstructions' 
+href="SPSS/thicknessVsEcc.html">Thickness vs Ecc</a>
+</p>
+
+<h2>Psychophysics Data</h2>
+
+<p>Initially we first wanted to determine whether the finding of deaf 
+people having enhanced visual acuity in the periphery could be 
+replicated. This was tested with a repeated measures ANOVA with 1 
+visual field location central, middle and peripheral) as a within-subjects 
+factor, and group (deaf or hearing) as a between-subjects factor. A 
+repeated measures analysis is appropriate in this instance as each 
+participant was tested at multiple locations in their visual field.</p>
+
+<p>Before performing a repeated-measures ANOVA, we should check whether 
+the underlying <a class="assumptions" 
+href="../assumptions/RMAnova.html" title="Repeated measures 
+ANOVA">assumptions</a> of the analysis are satisfied.<br />
+<a class="btn SPSSinstructions" href="SPSS/normality.html">SPSS: 
+Shapiro-Wilk</a>
+</p>
+
+<p>The Shapiro-Wilk test can be used to test for normality. The results 
+from this test show that the distribution of the measurements for 
+visual acuity in the middle and peripheral visual field do not 
+significantly deviate from a normal distribution (W(28)=0.979, p=0.825, 
+W=0.931, p=0.065, respectively), and so satisfy the normality 
+assumption. However, this is not the case for the visual acuity 
+measurement in the central visual field (W(28)=0.862, p=0.002). 
+Repeated measures ANOVAs tend to be robust against violations of the 
+Normality assumption. Nevertheless, this is important to bear in mind 
+when considering results, particularly those pertaining to the central 
+visual field.</p>
+
+<p>
+<a class="btn SPSSinstructions" href="SPSS/RM_ANOVA2.html">SPSS: 
+Repeated-measures ANOVA</a></br>
+Mauchley’s test of sphericity is significant, demonstrating the 
+assumption of sphericity is violated (W(2)=0.205, p<0.001). Thus, a 
+correction on the degrees of freedom, such as the Greenhouse-Geisser 
+correction, should be used.</p>
+
+<p>The results of the repeated-measures ANOVA show there are significant main effects of visual field location (F(1.114)=149.397, p<0.001), and group (F(1)=4.642, p=0.041). Additionally, there is a significant interaction between visual field location and group (F(1.114)=7.198, p=0.010).</p>
+
+<h3>Post-hoc Analysis</h3>
+
+<p>
+In order to determine where in the visual field the effects lie, we 
+completed a post-hoc analysis, which consisted of independent samples 
+t-tests. 
+<a class="btn SPSSinstructions" href="SPSS/Independent_T_3.html">SPSS: 
+Independent samples t-test</a>
+</p>
+
+<p>There were no significant differences between the deaf and hearing groups in the central or middle visual field. However, there was a significant difference between deaf and hearing groups in the PVF (t(26)=2.549, p=0.017). This replicates previous findings that deaf people have enhanced resolution in the peripheral visual field, and is an important first step if we want to examine the neural differences between deaf and hearing people's vision.</p>
+
+
+<p>As the visual acuity measurements in the central visual field 
+differed significantly from the normal distribution, a Mann Whitely U 
+test (non-parametric alternative to an independent samples t-test) can 
+be used to check the robustness of the results of the t-test.<br />
+<a class="btn SPSSinstructions" href="SPSS/NP_means_3.html">SPSS: 
+Mann-Whitney test</a>
+</p>
+<p>The result of this test confirms the previous finding that there is no significant difference between the deaf and hearing groups in their acuity in the central visual field (U=87.0, p=0.650).</p>
+
+<h2>Visual Mapping Data</h2>
+<p>The pRF measurements reflect the width of a Gaussian curve fitted at 
+each visual eccentricity. The Gaussian curve represents a neural 
+tuning curve, the main idea being that while each neuron has a 
+preferred level of visual eccentricity, they will also respond to 
+other eccentricity levels, with a gradually diminishing response the 
+further the eccentricity is from the preferred level of eccentricity. 
+The higher the width of the tuning curve, the more information a 
+neuron responds to. The pRF measures thus reflect how much of the visual 
+world is represented at that point in visual cortex. 
+In this experiment we wanted to know whether these differed between deaf 
+and hearing participants, and if they were different, at which location 
+in the visual field.</p>
+
+<p>There are multiple ways in which we can examine this hypothesis. 
+Performing an independent samples t-test at every eccentricity to see 
+where the groups differ is not an option for a number of reasons. As 
+there are several measurements generated for each participant, there is 
+correlation in the errors which violates assumptions of typical between 
+subjects tests. Additionally, when performing a number of statistical 
+comparisons on a data set, by chance, 5% of these will give you false 
+positives. Therefore it is essential to perform a multiple comparisons 
+correction. A popular example of this is the Bonferroni correction, in 
+which you divide the threshold for statistical significance (&alpha;) 
+by the number of statistical tests you are performing to determine a 
+new threshold for statistical significance. Formally for this example, 
+if we set &alpha;=0.05, and the number of tests is 28, the new threshold 
+for statistical significance would be 0.0018 (0.05/28=0.0018). Thus any 
+effect would need to be massive in order to be detected.</p> 
+<p>Alternatively,
+a repeated-measures ANOVA could be used. A problem here is that there 
+were a number of missing values in the data. For certain participants 
+and eccentricity levels, the data was too noisy to allow accurate 
+estimation of visual field size.  
+In a repeated-measures ANOVA, if some of the values are missing for a 
+subject, all the data from that subject is excluded from the analysis. 
+In the present dataset, this means that the data from 7 participants 
+would be excluded from the analysis, which reduced the power of the 
+repeated-measures ANOVA considerably.</p>
+
+<p>For these reasons, we chose to analyse the data with a linear 
+mixed-effects analysis. A linear mixed-effects model allows you to 
+replicate a repeated-measures ANOVA. However, it is a more general 
+model and deals with missing values "gracefully" (i.e., you don't have 
+to ignore all the observations from a participant if one of the values 
+is missing). </p>
+
+<h3>Linear mixed-effects model</h3>
+
+<p>For the purposes of this experiment, hemispheres are the unit of 
+measurement. There is a complete map of the visual field in primary 
+visual cortex in each hemisphere, and these visual maps in the 2 
+hemispheres in a participants' brain differ, and as such, considering 
+each hemisphere separately rather than the average of these is 
+considered a more accurate and statistically sensitive approach. 
+pRF size is the dependent variable. We'll assume a linear relation 
+between eccentricity and pRF, but allow the slope (steepness) of this 
+relation to vary between the groups. We can do this by including an 
+interaction between eccentricity and group. From the main hypothesis, 
+we would expect little difference between the groups for low values of 
+eccentricity, but the difference to increase at higher values of 
+eccentricity. As such, we expect the slope to be higher for the deaf 
+group than for the hearing group. In a model with an interaction between 
+group and eccentricity, one should be careful with interpreting a main 
+effect of group. As the difference between the groups varies with 
+eccentricity, it matters where you look for a difference. The main 
+effect of group is estimated at the point where all the other 
+independent variables in the model are 0. Using the original 
+eccentricity variable, we would thus test for a difference between the 
+groups at the centre of the visual field. As we don't expect a 
+difference here, this test would have little value. A more meaningful 
+test can be obtained by changing the point of comparison, by rescaling 
+the eccentricity variable. For instance, by centering eccentricity 
+(subtracting the mean), we can test for a group difference at a 
+medium eccentricity. If we want to test for a group difference at the 
+highest eccentricity, we can subtract 30 instead of the mean.</p>
+
+<p>By including random effects, we can allow for individual differences. 
+For instance, by including a random intercept, we can allow for 
+individual differences in average pRF value. We can allow for individual 
+differences in the steepness of the relation between eccentricity and 
+pRF by including a random slope for eccentricity. Interpretation of 
+these effects is again dependent on the scale of the eccentricity 
+variable. As the intercept is the value of pRF at the point where the 
+eccentricity variable is 0. Without a random slope, the differences 
+between individuals (within a group) would be the same at each 
+eccentricity value. However, if the slope varies between individuals, 
+individual differences may be larger or smaller, depending on the value 
+of eccentricity. This is for similar reasons as before (we can think of 
+hemispheres moderating the effect of eccentricity). So whether we find 
+significant variation in the intercept may again depend on whether we 
+center (or otherwise transform) eccentricity.</p>
+ 
+<p>For our analysis, we chose to centre eccentricity. In the model, we 
+include fixed effects for eccentricity, group, and their interaction, 
+and a random effect of eccentricity as well as a random intercept. 
+Finally, we allow the random slopes and intercepts to be correlated 
+over individuals by choosing an unstructured covariance matrix.</p>
+
+<p>The analysis demonstrates there is a highly significant effect of 
+eccentricity (F(1417)=1951, p&lt;.001), and in addition a significant 
+interaction between group and eccentricity (F(1417)=9.380, p=0.002).</p>
+
+<<transformVariable_10>>
+
+
+<h2>Thickness Data</h2>
+
+<p>Thickness data is a measure of cortical thickness (grey matter) at each eccentricity. In primary visual cortex, thickness typically varies between 1.5mm and 2.5mm (though in the rest of the brain this is between 1.5-4.5mm). These values can be plotted to check they fall within these limits.</p> 
+<<thicknessVsEcc>>
+
+<p>As for the pRF sizes, it is not a statistically sound or sensitive 
+approach to test this hypothesis with independent samples t tests, 
+although these can be used for post-hoc analysis.  Analogous to the pRF 
+size data, the repeated measures ANOVA is likely to be underpowered 
+because of missing data points. We will therefore use another linear 
+mixed-effects model.
+
+<h3>Linear mixed-effects model</h3>
+
+<p>The mixed effect model can be completed using the instructions above 
+as a template. The analysis demonstrates there is a significant effect 
+of effect of eccentricity (F(1781)=79.76, p&lt;.001), and a significant 
+interaction between group and eccentricity (F(1781)=13.16, 
+p&lt;.001).</p>
+
+<h2>Relationships between Behavioural, Structural and Functional Imaging Data</h2>
+
+<p>The premise of this study is that visual skills are in some way 
+linked to neural architecture, thus it is important to test whether 
+there is a relationship between behavioural measurements of visual 
+acuity and the neural measurements of pRF size and cortical thickness. 
+The measures for central visual field correspond to 2&deg;, the middle 
+visual field at 10&deg; and the peripheral visual field at 20&deg;.
+
+<h3>Pearson Product Moment Correlation</h3>
+
+<p>This can be used to test whether there is a linear relationship between the behavioural measurements of visual acuity and the neural measurements of pRF size and cortical thickness.</p>
+
+Assumptions
+Linear relationship between variables 
+There are no outliers
+Variables are continuous
+Variables are normally distributed 
+
+<p>The validity of most of these assumptions can be visually assessed 
+in a scatterplot. For this study, correlations have to be computed at the central, middle and peripheral locations in the visual field separately. We already know that visual acuity decreases as you move into the periphery, and that pRF size increases as you go into the periphery. Analysing all positions in the visual field together will reflect these relationships. However, if we want to be able to address the question of whether individuals' measures of pRF size or thickness can be correlated with either each other, or participants' visual acuity, we need to look at each area of the visual field individually.</p>
+<<correlation_11>>  
+
+<p>As 9 statistical tests were performed, to control the family-wise 
+error rate, we should apply a correction for multiple comparisons to 
+the significance level. A Bonferroni correction (Bonferroni) is the 
+simplest, which would reduce the significance level for each individual 
+test to &alpha;=0.006 (0.05/9). There is a significant negative 
+correlation between visual acuity and thickness in the middle visual 
+field (r=-0.526, p=0.004). However, none of the other correlational 
+tests were significant.</p>
+<p>When the relationship between the variables is not linear, there are 
+non-parametric options for testing the correlation between variables, 
+including Kendall’s tau and Spearman’s rho. These measure how when one 
+variable increases, the other variable increases (or decreases).</p>
+<p>Correlations are sensitive to the range over which data is sampled, 
+when there is a wider range it becomes a lot easier to detect effects in 
+comparison to when they are compressed over a smaller range. The range 
+of visual acuity is small, thus making it harder to detect an effect. 
+Note this is not the same as the scale of values, and therefore a linear 
+transformation of the values to make them larger will not remedy this 
+issue.</p>
+<p>Typically, at least 30 pairs of observations are required in order 
+to obtain a reliable test for a correlation.  Thus this study may have 
+been underpowered in this instance. Additionally, it is plausible that 
+different neurobiological mechanisms are underpinning the enhanced 
+acuity in either group, and therefore considering them together in the 
+one correlational analysis may obscure  weak effects.</p>
+
+
+
+           
+            <!--
+             <p>
+            <div class="SPSSinstructions">
+            <p>
+            You can click on a few buttons and get a load of output. You'll have to search extensively, but in the end you will
+            find the one number you actually need.
+            </p>
+            </div>
+            </p>
+            
+            <p>
+            <div class="note">
+            <h1>Assumptions</h1>
+            <p>And this is a note</p>
+            </div>
+            
+            </p>
+            -->
+           
+            
+            
+
+          
+        </div>  
+
+    </div>
+
+            <hr>
+
+            <footer>
+                <p>&copy; Company 2012</p>
+            </footer>
+
+        </div> <!-- /container -->
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+        <script src="../js/main.js"></script>
+        <script src="../js/vendor/jquery.shorten.1.0.js"></script>
+        <script src="../js/vendor/jquery.colorbox-min.js"></script>
+        <script src="../js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        
+        <script type="text/javascript">
+        $(document).ready(function() {
+     
+            $(".SPSSinstructions").colorbox({iframe:true, width:"80%", height:"80%"});
+            $(".assumptions").colorbox({iframe:true, width:"50%", height:"50%"});
+            
+            var stickyNavTop = $('.navbar').offset().top;  
+            var stickyNav = function(){  
+                var scrollTop = $(window).scrollTop();  
+                if (scrollTop > stickyNavTop) {   
+                    $('.navbar').addClass('navbar-fixed-top');  
+                } else {  
+                    $('.navbar').removeClass('navbar-fixed-top');   
+                }  
+            };  
+              
+            stickyNav();  
+              
+            $(window).scroll(function() {  
+                stickyNav();  
+            });  
+     
+        });
+        </script>
+
+<!--
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+
+
+                <script type="text/javascript">
+// $(document).ready(function() { var showChar = 100; var ellipsestext = "..."; var moretext = "more"; var lesstext = "less"; $('.more').each(function() { var content = $(this).html(); if(content.length > showChar) { var c = content.substr(0, showChar); var h = content.substr(showChar-1, content.length - showChar); var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>'; $(this).html(html); } }); $(".morelink").click(function(){ if($(this).hasClass("less")) { $(this).removeClass("less"); $(this).html(moretext); } else { $(this).addClass("less"); $(this).html(lesstext); } $(this).parent().prev().toggle(); $(this).prev().toggle(); return false; }); });
+$(document).ready(
+function() { 
+    var showInstructions = '<a class="SPSSinstructionsButton" href="#">SPSS</a>'; 
+    var closeInstructions = '<a class="SPSSinstructionsButton" href="#">Close SPSS</a>';
+    $('.SPSSinstructions').each(function() {
+        var instr = $(this).html();
+        var html = "hello" + showInstructions + "<span class=\"SPSSinstructionsHidden"> + instr + "<\span>";
+        $(this).html(html); 
+    });
+    $(".SPSSinstructionsButton").click(function(){
+        if($(this).hasClass("SPSSinstructionsShown")) { 
+            $(this).removeClass("SPSSinstructionsShown"); 
+            $(this).html(showInstructions);
+        } else { 
+            $(this).addClass("SPSSinstructionsShown");
+            $(this).html(closeInstructions); 
+        } 
+        $(this).parent().prev().toggle(); 
+        $(this).prev().toggle(); 
+        return false; 
+    }); 
+});
+
+        </script>
+-->
+    </body>
+</html>

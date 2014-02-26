@@ -1,0 +1,178 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+    padding-bottom: 20px;
+}
+
+.navbar {
+    background-color: #97BFDF;
+}
+.navbar-static-top {
+  top: 110px;
+}
+
+.navbar .nav > li > a {
+    color:  #000;
+    color: rgba(0, 0, 0, 0.80)
+}
+
+.navbar .nav .brand {
+    color: #000;
+}
+
+.jumbotron {
+    background-color: #D6D2C4;
+}
+
+.uclBanner {
+  position: static;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 0px;
+  margin-top: 0;
+  padding: 0 0 0 0;
+  min-height: 110px;
+  max-height: 110px;
+  background-color: #111111;
+}
+
+.uclLogo {
+  position: static
+  top: 0;
+  right: 0;
+  left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0 0 0 0;
+  min-height: 110px;
+  max-height: 110px;
+  width: 100;
+  background-image: url('../img/corp-identity-light-blue.gif');
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.note {
+    width: 100%;
+    color: inherit;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: #cccccc;
+    border: 5px solid #000000;
+     -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+.spss {
+    color: inherit;
+    padding: 20px;
+    background-color: #FF0000;
+     -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+.spss_syntax {
+    color: inherit;
+    padding: 20px;
+    background-color: #FF0000;
+     -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+.spss_syntax p {
+    font-family: Menlo, Monaco, Consolas, monospace;
+}
+
+.SPSSinstructions {
+     background-color: #e6e6e6;
+}
+
+.SPSSinstructionsButton {
+  color: #333333;
+  background-color: #e6e6e6;
+  padding: 2px 10px;
+  font-size: 11.9px;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.SPSSinstructionsHidden span {
+  display: none;
+}
+
+table.instr, td.instr {
+	border:0px hidden;
+	text-align:center;
+	vertical-align:middle;
+}
+
+table.corr, th.corr, td.corr {
+	padding:5px;
+	border: 1px solid #666;
+	font-size:14px;
+	border-collapse:collapse;
+	vertical-align:middle;
+	padding-bottom: 0px;
+}
+td.corr{
+	text-align:center;
+}
+th.corr{
+	font-weight:bold;
+	text-align:center;
+	background-color:#97BFDF;
+}
+th.corr_nr{
+	text-align:center;
+	font-weight:bold;
+	background-color:#FFFFFF;
+	border: 1px solid #666;
+	border-bottom:thin;
+	border-right:thin;
+	border-left:hidden;
+	border-top:hidden;
+}
+
+table, td, th {
+	padding:5px;
+	border: 1px solid #666;
+	font-size:14px;
+	border-collapse:collapse;
+	vertical-align:middle;
+	padding-bottom: 0px;
+}
+th {
+	background-color:#97BFDF;
+}
+
+.morecontent span {
+    display: none;
+}
+.comment {
+    width: 400px;
+    background-color: #f0f0f0;
+    margin: 10px;
+}
+
+.contentbox {
+    background-color:#EFEFEF;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-top: 1px dashed #666;
+    border-bottom: 1px dashed #666;
+}

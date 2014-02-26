@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Information search: introduction</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/colorbox.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="../bootstrap/js/html5shiv.js"></script>
+          <script src="../bootstrap/js/respond.min.js"></script>
+        <![endif]-->
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    </head>
+    <body>
+        <script type="text/javascript" src="includes/navbar.js">  </script>
+        
+        <div class="container">
+
+        <div class="row">
+        <div class="col-8 col-sm-12 col-lg-8">
+
+<h1>Introduction</h1>
+
+<p>Diagnostic reasoning involves the evaluation of various sources of information regarding a particular hypothesis. People undertake diagnostic reasoning to solve numerous problems. However, all the information required to evaluate a hypothesis is typically not initially present. Diagnostic information seeking refers to the process by which information concerning a hypothesis is sought.</p>
+
+<p>Diagnostic information can be organised in the form of a causal hierarchy (see Figure 1 for an example), where the information is represented as the consequence of a single cause (Kim & Keil, 2003). Sequences of consequences that result from the cause are known as causal chains. The relationships between different branches of the causal hierarchy are known to affect judgments of causal relations (Ahn, Kim, Lassaline & Dennis, 2000).One example of such a structural property affecting causal judgments is the "diversity effect" (Kim & Keil, 2003). The diversity effect refers to the belief proposes that knowing about information from diverse causal chains allows for stronger inferences than knowing about information from more proximal causal chains (Kim & Keil, 2003). The reason for this is that proximal chains are more dependent than diverse causal chains. E.g., in Figure 1, “pneumonia” and “yeast infection in the mouth” share the “increased susceptibility to infection” cause. "Scarring of the skin" and "Pneumonia" are less dependent; while they share the “exposure to radiation” cause, this is much higher up in the chain.</p>
+
+<figure>
+<img src='img/intro.jpg' alt='Figure 1: Summary causal diagram of the radiation sickness stimuli used by Kim & Keil (2003)' width='60%' />
+<figcaption>
+<h5>Figure 1: Summary causal diagram of the radiation sickness stimuli used by Kim & Keil (2003)</h5>
+</figure>
+
+<p>Kim & Keil (2003) found the diversity effect in medical inductive reasoning, where participants judged the probability of a candidate medical condition as being more likely if the constituent symptoms were causally diverse as opposed to being causally proximal. For example, if told to assess if a patient has radiation sickness given a presenting symptom of pneumonia, people tended to select tests for skin damage rather than a test for yeast infection, which participants were told was causally proximal to pneumonia (see Figure 1 above).</p>
+
+<p>Kim & Keil (2003) explained the effect in terms of the visualisation of alternative hypotheses. When pieces of evidence are proximal to each other, people are able to visualise a large number of alternative causes. If pieces of evidence are diverse, many of these alternatives are ruled out. A similar mechanism is thought to account for the diversity effect in information-seeking: People prefer diverse evidence because as it provides strong evidence if found to be true (Kim et al, 2008). Furthermore, it is argued that choosing the diverse evidence also maximisesd the probability of disconfirmation, and is thus more helpful in ascertaining the most likely hypothesis (Kim et al, 2008).</p>
+
+<p>A major criticism of previous research on the diversity effect is that is does not factor in the diagnosticity of each piece of evidence. The diagnosticity of a piece of evidence refers to its exclusivity with regards to a hypothesis. For example, headaches and double vision are both symptoms of a brain tumour. However, headaches are reported in thousands of conditions, whereas double vision is symptomatic of only a few, including brain tumours, and thus is more diagnostic of a brain tumour. People are sensitive capable of differential sensitivity to different diagnosticities.</p>
+
+<p>In this project we will investigate how diagnosticity interacts with the diversity effect, and whether people use adaptive strategies when diagnosticities become disparate. In line with previous research, it is anticipated the diversity effect will arise during information seeking as people infer information from the causal structure (Kim et al., 2008). However, if people are sensitive to information about diagnosticity, the diversity effect should disappear if the diverse pieces of information becomes less diagnostic than the proximal pieces of information.</p>
+
+<p>The specific hypotheses of the experiment are as follows:
+
+<ol>
+<li>When there is no information regarding diagnosticity of a piece of evidence, participants will display evidence of the diversity bias, favouring diverse over proximal evidence.</li>
+<li>Participants are sensitive to the diagnosticity of information. If diagnosticity of information is manipulated so thatas the diverse piece of evidence is less diagnostic, participants will favour the proximal piece of evidence. This would demonstrate diagnosticity is capable of superseding the diversity effect.</li>
+</ol>
+</p>
+           
+            
+            
+
+          
+        </div>  
+
+    </div>
+
+            <hr>
+
+            <footer>
+                <p>&copy; UCL 2013-2014</p>
+            </footer>
+
+        </div> <!-- /container -->
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+        <script src="../js/main.js"></script>
+        <script src="../js/vendor/jquery.shorten.1.0.js"></script>
+        
+        <script type="text/javascript">
+        $(document).ready(function() {
+     
+            var stickyNavTop = $('.navbar').offset().top;  
+            var stickyNav = function(){  
+                var scrollTop = $(window).scrollTop();  
+                if (scrollTop > stickyNavTop) {   
+                    $('.navbar').addClass('navbar-fixed-top');  
+                } else {  
+                    $('.navbar').removeClass('navbar-fixed-top');   
+                }  
+            };  
+              
+            stickyNav();  
+              
+            $(window).scroll(function() {  
+                stickyNav();  
+            });  
+     
+        });
+        </script>
+
+<!--
+        <script>
+    </body>
+</html>

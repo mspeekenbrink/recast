@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Information search: method</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/colorbox.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="../bootstrap/js/html5shiv.js"></script>
+          <script src="../bootstrap/js/respond.min.js"></script>
+        <![endif]-->
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    </head>
+    <body>
+        <script type="text/javascript" src="includes/navbar.js">  </script>
+        
+        <div class="container">
+
+<div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="termsModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Definitions used in Experiment 1 and 2</h4>
+      </div>
+      <div class="modal-body">
+<TABLE CELLPADDING=5 CELLSPACING=0 border=1>
+	<TBODY>
+		<tr valign='top'>
+			<th>Term</th>
+			<th>Definition</th>
+		</tr>
+		<tr valign='top'>
+			<td>Culprit</td>
+			<td>The actual person who had committed the crime.</td>
+		</tr>
+		<tr valign='top'>
+			<td>Accused</td>
+			<td>A person who is suspected to have committed the crime. In this
+				experiment, the accused in each case is given a name. This person
+				may or may not be the culprit.</td>
+		</tr>
+		<tr valign='top'>
+			<td>Witness</td>
+			<td>Someone who has information regarding the case.</td>
+		</tr>
+	</TBODY>
+</TABLE>
+      </div>
+      <!--
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+      -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+ <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Definitions used in Experiment 1 and 2</h3>
+  </div>
+  <div class="modal-body">
+<TABLE CELLPADDING=5 CELLSPACING=0 border=1>
+	<TBODY>
+		<tr valign='top'>
+			<th>Term</th>
+			<th>Definition</th>
+		</tr>
+		<tr valign='top'>
+			<td>Culprit</td>
+			<td>The actual person who had committed the crime.</td>
+		</tr>
+		<tr valign='top'>
+			<td>Accused</td>
+			<td>A person who is suspected to have committed the crime. In this
+				experiment, the accused in each case is given a name. This person
+				may or may not be the culprit.</td>
+		</tr>
+		<tr valign='top'>
+			<td>Witness</td>
+			<td>Someone who has information regarding the case.</td>
+		</tr>
+	</TBODY>
+</TABLE>
+  </div>
+
+</div>
+            
+            <div class="row">
+
+        <div class="col-8 col-sm-12 col-lg-8">
+
+<h1>Method</h1>
+<h2>Experiment 1</h2>
+
+<h3>Participants</h3>
+<p>104 undergraduate students (20 male) participated in the study as part of an undergraduate laboratory class. The mean age was 19.44 years (SD = 2.74 years). Participants gave informed consent and the study was approved by University College London ethics committee.</p>
+
+<h3>Materials</h3>
+<p>The stimuli consisted of two crime scenarios, each with a different type of witness evidence: location and time (see Table 1). The use of a crime scenario allows the experimenter more explicit control of participants' knowledge base in the information they provide. This is in contrast to medical scenarios, where participants may vary in the amount of prior knowledge they have about a given condition. In each scenario a potential culprit for a theft was identified. Witness 1 had already been interviewed, and gave a positive identification of the potential culprit. Participants then had the choice to interview either witness 2 or witness 4. It was not an option to interview witness 3, and this option was only there to provide apparent parity between the number of choices. In the 'same' condition, witness 2 was in the same location as witness 1, and witness 4 was in another close by location. In the 'different' condition, witness 2 was in the same location as witness 1, and witness 4 was in distant location. In the 'time' scenario, this corresponded to potential sighting of the culprit at a different point in time: witness 1 and 2 sighted the culprit nearer the time of the crime than witness 3 and 4.  Thus the diagnosticity was manipulated, as a more distant source of information can be less reliably linked to the event of interest (the crime in this scenario). Table 1 contains a more complete description of the scenarios.</p>
+
+
+<div class="contentbox">
+<TABLE>
+<caption>Table 1: Individual Components of the Crime Scenarios Used in Study 1.</caption>
+	<TR>
+		<TH>Components</TH>
+		<TH>Scenario 1: Location</TH>
+		<TH>Scenario 2: Time</TH>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD>
+			Circumstances
+			of crime
+		</TD>
+		<TD>
+			A case of snatch-theft occurred at 14.30 hrs at Hood Street, and a
+			black leather handbag was stolen from the victim; items inside the
+			handbag included about £80 cash and a mobile phone; the location
+			of the crime is marked by the cross on the map; the victim was
+			unable to give a facial description of the culprit; however, she
+			saw the culprit flee the scene in the path as shown on the map.
+		</TD>
+		<TD>
+			A case of housebreaking and theft occurred at 53 Tourney Gardens at 02.30 hrs two days ago.
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD>
+			Circumstances of arrest
+		</TD>
+		<TD>
+			At 18.00 hrs, Police officers were alerted to a case of suspicious behaviour at a location 2km away; 
+            Max, a 42-year-old male, was brought back to station for questioning; Max was found to be in possession 
+            of the same model of mobile phone that was earlier stolen; you suspect that Max was the culprit in the 
+            earlier case; however, you are unable to establish any direct links to the stolen phone.
+		</TD>
+		<TD>
+            Yesterday, another case occurred at Grunden Avenue, located about 500m away from the earlier case; Quentin, a 37-year-old male was caught red-handed by officers on patrol; you want to check if Quentin was also responsible for the earlier case.
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD>
+        Prior probability of guilt
+		</TD>
+		<TD>
+        50%
+		</TD>
+        <TD>
+        50%
+        </TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD>
+            Course of action
+		</TD>
+		<TD>
+			You
+			have decided to put Max in an identification parade.
+		</TD>
+		<TD>You
+			have decided to put Quentin in an identification parade.
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD>Witnesses
+		</TD>
+		<TD>Witnesses
+			are shopkeepers at the respective locations; assessment of the
+			witnesses shows that they have no affiliation to the accused, and
+			have no reason to lie during the identification process.
+		</TD>
+        <TD>
+            Witnesses
+			are the respective immediate neighbours of the victim; assessment
+			of the witnesses shows that they have no affiliation to the
+			accused, and have no reason to lie during the identification
+			process.
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD>1
+			&amp; 2
+		</TD>
+		<TD>
+			Location
+			A is near to the crime scene.
+		</TD>
+		<TD>Witnesses
+			from 51 Tourney Gardens claimed to have seen the culprit at 02:20
+			hrs
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD>
+            Witness 1
+		</TD>
+		<TD>Has
+			identified the accused in the ID parade
+		</TD>
+		<TD>Has
+			identified the accused in the ID parade.
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD>3
+			&amp; 4: ‘same’ condition
+		</TD>
+		<TD >Location
+			B is near to the crime scene.
+		</TD>
+		<TD>Witnesses
+			from 55 Tourney Gardens claimed to have
+			seen the culprit at 02:20
+			hrs
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD>3
+			&amp; 4: ‘different’ condition
+		</TD>
+		<TD>Location
+			B is far from the crime scene.
+		</TD>
+		<TD>Witnesses
+			from 55 Tourney Gardens claimed to have
+			seen the culprit at 01:00
+			hrs
+		</TD>
+	</TR>
+</TABLE>
+</div>
+
+<p>The scenarios were formulated to fit into a causal hierarchy. The causal hierarchy used in this study comprised of a single candidate hypothesis of guilt, streaming into two consequences in the lower node, each resulting in two more consequences, giving 4 separate consequences in total. Figure 1 illustrates the causal hierarchy for the location scenario.</p>
+
+<div class="contentbox">
+<figure>
+<img src='img/method5.gif' alt=' ' width='400' />
+<figcaption>
+<h5>Figure 1. Summary causal diagram for the 'location' scenario.</h5>
+</figcaption>
+</figure>
+</div>
+<p>The information was presented in a story-based approach and the scenarios were constructed to have a moderate prior probability of guilt and high witness reliability. A diagrammatic aid was provided to the participants for the location scenario (see Figure 2). The causal hierarchy diagram was not shown to participants.</p>
+
+<div class="contentbox">
+<figure>
+    <table>
+    <tr>
+        <td>
+            <img src='img/method1.jpg' alt='\'Same\' Condition' width='400' />
+            <figcaption>
+            <h5>'Same' Condition</h5>
+            </figcaption>
+        </td>
+        <td>
+            <img src='img/method2.jpg' alt='\'Different\' Condition' width='400' />
+            <figcaption>
+            <h5>'Different' Condition</h5>
+            </figcaption>
+        </td>
+    </tr>
+    </table>
+    <figcaption>
+    <h5>Figure 2. Diagrammatic aid for location scenario in Study 1. X marks the location of the crime. A and B are the locations of the witnesses.</h5>
+    </figcaption>
+</figure>
+</div>
+
+<h3>Procedure & Design</h3> 
+<p>The participants were presented with the instructions and tasks on a computer. Participants were instructed to read the scenarios and choose to interview the witness that they thought would be most helpful in deciding whether or not the accused is guilty. The <a href="#termsModal" data-toggle="modal">legal terms</a> were clearly defined.</p>
+<p>
+In each scenario, participants were informed of the crime committed, the circumstances under which the accused was arrested and the initial prior probability of the accused being guilty (50%). They were then presented with the four witnesses, and told that witness 1 had already been interviewed, who had provided evidence in favour of the accused being guilty. Participants were asked to select between two witnesses to interview next. The witnesses available for selection were from separate causal chains, with witness 2 constituting the causally proximal evidence, and witness 4 the causally diverse evidence. Witness 3 was not offered as a choice, so that there would be parity between the numbers of choices between the causal chains. After making their choice, participants were asked to rate how important they thought the witnesses were on a scale of 0-100 (0: not important; 100: extremely important).</p>
+<p>
+For each scenario, the causal chain diagnosticities were manipulated. Both causal chains had the same diagnosticities under the 'same' condition, while the second chain had lower diagnosticity than the first under the 'different' condition. For example, the location scenario made use of the distance between the witness locations and the crime scene (see Figure 3 above). For the 'same' condition, both witness locations were roughly equidistant to the crime scene, whilst for the 'different' condition, location A was substantially nearer to the crime scene compared to location B. For the time scenario, the time at which the witnesses saw the culprit was manipulated whereby in the 'same' condition the potential sightings of the culprit occurred at the same time, whereas in the 'different' condition, the potential sightings of the culprit were 1 hour and 20 minutes separate in time.
+Participants were randomly allocated to complete the 'same' condition for the 'time' scenario and the 'different' condition for the 'location' scenario, or the opposite combination. For both scenarios, participants were required to indicate whether they would interview witness 2 or witness 4, and additionally rate the importance of these witnesses. As a manipulation check, participants were additionally asked to complete probability judgement questions. The example from the location scenario are provided below.</p>
+
+<div class="contentbox">
+<p>
+<b>Probability Judgment Questions:</b>
+<ol type='A'>
+<li>Suppose that the accused was at location A, what is the probability that Witness 2 picked the accused in the ID parade?</li>
+<li>Suppose that the accused was not at location A, what is the probability that Witness 2 picked the accused in the ID parade?</li>
+<li>Suppose that the accused was at location B, what is the probability that Witness 4 picked the accused in the ID parade?</li>
+<li>Suppose that the accused was not at location B, what is the probability that Witness 4 picked the accused in the ID parade?</li>
+<li>Suppose that the accused committed the crime, what is the probability that the accused was at location A?</li>
+<li>Suppose that the accused did not commit the crime, what is the probability that the accused was at location A?</li>
+<li>Suppose that the accused committed the crime, what is the probability that the accused was at location B?</li>
+<li>Suppose that the accused did not commit the crime, what is the probability that the accused was at location B?</li>
+</ol>
+</p>
+</div>
+
+<h2>Experiment 2</h2>
+<p>In the 'time' scenario from the first experiment, participants seemed to choose randomly between the witnesses. The stimuli provided to participants was changed in order to try exaggerate the differences in the diagnosticity of information in the 'different' condition, and also to provide greater diagrammatic aid.</p>
+<h3>Participants</h3><p>35 participants (14 male) took part in the study. The mean age was 19.44 years (SD = 2.74 years). Participants were renumerated. The study was approved by UCL ethics committee.</p>
+<h3>Materials</h3>
+<p>The stimuli consisted of one crime scenario: time (see Table 2). In contrast to experiment 1, the diagnosticity of evidence in the 'different' condition was further reduced, by making the sighting of the accused more temporally different. Thus the causal chain diagnosticities were manipulated. A timeline was also provided (see Figure 3).</p>
+
+<div class="contentbox">
+<TABLE>
+<caption>Table 2: Individual Components of the Crime Scenario Used in Study 2.</caption>
+    <TR VALIGN=BOTTOM>
+        <TH>
+            Components
+        </TH>
+        <TH>Scenario: time</TH>
+    </TR>
+
+    <TR VALIGN=TOP>
+        <TD>
+            Circumstances of crime
+        </TD>
+        <TD>A case of housebreaking and theft occurred at 53 Tourney Gardens at 02:30 hrs two days ago.
+        </TD>
+    </TR>
+    <TR VALIGN=TOP>
+        <TD>
+            Circumstances
+            of arrest
+        </TD>
+        <TD>Yesterday,
+            at 04:00 hrs, another case occurred at Grunden Avenue, located
+            about 500m away from the earlier case; Quentin, a 37-year-old
+            male was caught red-handed by officers on patrol; you want to
+            check if Quentin was also responsible for the earlier case at
+            Tourney Gardens.
+        </TD>
+    </TR>
+    <TR VALIGN=TOP>
+        <TD>Prior
+            probability of guilt
+        </TD>
+        <TD>50%
+        </TD>
+    </TR>
+    <TR VALIGN=TOP>
+        <TD>Course
+            of action
+        </TD>
+        <TD>You
+            have decided to put Quentin in an identification parade.
+        </TD>
+    </TR>
+    <TR VALIGN=TOP>
+        <TD>Witnesses
+        </TD>
+        <TD>Witnesses
+            are the respective immediate neighbours of the victim; >assessment
+            of the witnesses shows that they have no affiliation to the
+            accused, and have no reason to lie during the identification
+            process.
+        </TD>
+    </TR>
+    <TR VALIGN=TOP>
+        <TD>1
+            &amp; 2
+        </TD>
+        <TD>
+            Witnesses
+            from 51 Tourney Gardens claimed to have
+            seen the culprit at 02:20
+            hrs on the night of the crime.
+        </TD>
+    </TR>
+    <TR VALIGN=TOP>
+        <TD>3
+            &amp; 4: 'same'
+            condition
+        </TD>
+        <TD>
+            Witnesses
+            from 55 Tourney Gardens claimed to have
+            seen the culprit at 02:20
+            hrs on the night of the crime.
+        </TD>
+    </TR>
+    <TR VALIGN=TOP>
+        <TD>
+            3
+            &amp; 4: 'different' condition
+        </TD>
+        <TD>
+            Witnesses
+            from 55 Tourney Gardens claimed to have
+            seen the culprit at 03:00
+            hrs the night before.
+        </TD>
+    </TR>
+    <TR VALIGN=TOP>
+        <TD>Witness 1
+        </TD>
+        <TD>Has
+            identified the accused in the ID parade.
+        </TD>
+    </TR>
+</TABLE>
+</div>
+
+<div class="contentbox">
+<figure>
+    <table>
+    <tr>
+        <td>
+            <img src='img/method3.jpg' alt='\'Same\' Condition' width='400' />
+            <figcaption>
+            <h5>'Same' Condition</h5>
+            </figcaption>
+        </td>
+        <td>
+            <img src='img/method4.jpg' alt='\'Different\' Condition' width='400' />
+            <figcaption>
+            <h5>'Different' Condition</h5>
+            </figcaption>
+        </td>
+    </tr>
+    </table>
+    <figcaption>
+    <h5>Figure 3. Diagrammatic aid for time scenario in Study 2.</h5>
+    </figcaption>
+</figure>
+</div>
+
+<h3>Procedure and Design</h3> 
+<p>The instructions and tasks were identical to those used in the first study. Participants were randomly allocated to the 'same' or 'different' condition, and were required to choose between two witnesses to interview, as well as made judgments on the importance of the witnesses.</p>
+
+
+
+
+         
+            
+            
+
+          
+        </div>  
+    </div>
+    </div>
+
+            <hr>
+
+            <footer>
+                <p>&copy; Company 2012</p>
+            </footer>
+
+        </div> <!-- /container -->
+        
+        <!-- This contains the hidden content for inline calls -->
+        <!--
+        <div style='display:none'>
+			<div id='appendixA' style='padding:10px; background:#fff;'>
+			<TABLE CELLPADDING=5 CELLSPACING=0 border=1>
+	<TBODY>
+		<tr valign='top'>
+			<th>Term</th>
+			<th>Definition</th>
+		</tr>
+		<tr valign='top'>
+			<td>Culprit</td>
+			<td>The actual person who had committed the crime.</td>
+		</tr>
+		<tr valign='top'>
+			<td>Accused</td>
+			<td>A person who is suspected to have committed the crime. In this
+				experiment, the accused in each case is given a name. This person
+				may or may not be the culprit.</td>
+		</tr>
+		<tr valign='top'>
+			<td>Witness</td>
+			<td>Someone who has information regarding the case.</td>
+		</tr>
+	</TBODY>
+</TABLE>
+			</p>
+		</div>
+        -->
+		
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+        <script src="../js/main.js"></script>
+        <script src="../js/vendor/jquery.shorten.1.0.js"></script>
+        <script src="../js/vendor/jquery.colorbox-min.js"></script>
+        <!-- <script src="../js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script> -->
+        
+        <script type="text/javascript">
+            
+        $(document).ready(function() {
+            /*
+            $(".breakout").colorbox({iframe:true, width:"80%", height:"80%"});
+            $(".SPSSinstructions").shorten({
+                "showChars" : 0,
+                "moreText"  : "Show SPSS instructions",
+                "lessText"  : "Hide SPSS instructions",
+                "ellipsesText"  : "",
+            });
+            */
+            var stickyNavTop = $('.navbar').offset().top;  
+            var stickyNav = function(){  
+                var scrollTop = $(window).scrollTop();  
+                if (scrollTop > stickyNavTop) {   
+                    $('.navbar').addClass('navbar-fixed-top');  
+                } else {  
+                    $('.navbar').removeClass('navbar-fixed-top');   
+                }  
+            };  
+              
+            stickyNav();  
+              
+            $(window).scroll(function() {  
+                stickyNav();  
+            });  
+     
+        });
+        </script>
+
+<!--
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+
+
+                <script type="text/javascript">
+// $(document).ready(function() { var showChar = 100; var ellipsestext = "..."; var moretext = "more"; var lesstext = "less"; $('.more').each(function() { var content = $(this).html(); if(content.length > showChar) { var c = content.substr(0, showChar); var h = content.substr(showChar-1, content.length - showChar); var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>'; $(this).html(html); } }); $(".morelink").click(function(){ if($(this).hasClass("less")) { $(this).removeClass("less"); $(this).html(moretext); } else { $(this).addClass("less"); $(this).html(lesstext); } $(this).parent().prev().toggle(); $(this).prev().toggle(); return false; }); });
+$(document).ready(
+function() { 
+    var showInstructions = '<a class="SPSSinstructionsButton" href="#">SPSS</a>'; 
+    var closeInstructions = '<a class="SPSSinstructionsButton" href="#">Close SPSS</a>';
+    $('.SPSSinstructions').each(function() {
+        var instr = $(this).html();
+        var html = "hello" + showInstructions + "<span class=\"SPSSinstructionsHidden"> + instr + "<\span>";
+        $(this).html(html); 
+    });
+    $(".SPSSinstructionsButton").click(function(){
+        if($(this).hasClass("SPSSinstructionsShown")) { 
+            $(this).removeClass("SPSSinstructionsShown"); 
+            $(this).html(showInstructions);
+        } else { 
+            $(this).addClass("SPSSinstructionsShown");
+            $(this).html(closeInstructions); 
+        } 
+        $(this).parent().prev().toggle(); 
+        $(this).prev().toggle(); 
+        return false; 
+    }); 
+});
+
+        </script>
+-->
+    </body>
+</html>
