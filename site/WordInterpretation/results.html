@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Information search: results</title>
+        <title>Word Interpretation: Results</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -47,7 +47,7 @@ where rowers name more words from the rowing context compared to the
 control group, F(1,240) = 36.755, p&lt;.001.</p>
 
 <p>When conducting an ANOVA, it is good practice to ascertain whether
-the <a class="assumptions" href="../assumptions/ANOVA.html">assumptions</a> 
+the <a class="assumptions" href="../assumptions/Anova.html">assumptions</a> 
 underlying the analysis are valid. The Normality assumption can be 
 checked with a Shapiro-Wilks test. If we look at Proportion_Rowing, we 
 assert that the variable is not normally distributed in either of the 
@@ -68,8 +68,7 @@ U=593.0, Z=-6.793, p&lt;.001.<br />
 
 <p>We will now focus more closely on the factors that affect the biased interpretation of ambiguous words in rowers. In many situations, it is helpful to start with some preliminary correlations in order to assess the relations between the variables in the dataset. We use bivariate correlations between all possible combinations of our four independent and the dependent variable. First, we need to filter out the control participants, since these don’t have any values for the variables that we’d like to examine. We yield the following table:</p>
 
-<p>&nbsp;</p>
-
+<div class="contentbox">
 <table class="corr" width="100%">
 <col width="100/6%"><col width="100/6%"><col width="100/6%"><col width="100/6%"><col width="100/6%"><col width="100/6%">
   <tr class="corr" height="60">
@@ -149,30 +148,26 @@ U=593.0, Z=-6.793, p&lt;.001.<br />
     <td class="corr" width="78">---</td>
   </tr>
 </table>
-
-<p>&nbsp;</p>
+</div>
 
 <p>Judging from these correlations, a more recent rowing experience causes people to name more rowing interpretations (R=-.316) and generally, higher rowing frequencies lead to more interpretations in the rowing context (R=.183).</p>
 
-<p>Additionally, we see that amongst our four predicting variables, Age correlates with Rowing_Experience_Years and Times_PerWeek_Rowed. Older people seem to have more experience (R=.169), but row less frequently (R=-.264). Lastly, the rowing frequency and the time since the last rowing experience are negatively correlated, meaning that more frequent rowers had more recent experiences (R=-.182). Highly correlated  predictor variables can give problems in a regression analysis, making it difficult to identify their unique relation with the dependent variable. However, these correlations are relatively moderate and so we can first take a look at the regression and some additional measures for collinearity.</p>
+<p>Additionally, we see that amongst our four predicting variables, Age correlates with Rowing_Experience_Years and Times_PerWeek_Rowed. Older people seem to have more experience (R=.169), but row less frequently (R=-.264). Lastly, the rowing frequency and the time since the last rowing experience are negatively correlated, meaning that more frequent rowers had more recent experiences (R=-.182). Highly correlated  predictor variables can give problems in a regression analysis, making it difficult to identify their unique relation with the dependent variable. However, these correlations are relatively moderate and so we can first take a look at the regression and some additional measures for collinearity.<br /><a class='btn SPSSinstructions' href="SPSS/img/Results_Correlation.png">SPSS: Correlation</a></p>
 
-<p> <a class='btn SPSSinstructions' href="SPSS/img/Results_Correlation.png">SPSS: Correlation</a></p>
-
-<p>&nbsp;</p>
 
 <p>It is also advisable to take a look at the distributions of all variables before conducting a regression. Therefore, we will now illustrate histograms for the four independent and the dependent variable in order to identify potential irregularities (e.g. variable has two extreme peaks and no values between).</p>
 
+<div class="contentbox">
 <p><img src='img/Distr_Prop_Rowing.png' alt=' ' width='45%' /></p>
 <p><img src='img/Distr_Age.png' alt=' ' width='45%' />
 <img src='img/Distr_Exper.png' alt=' ' width='45%' /></p>
 <p><img src='img/Distr_Recency.png' alt=' ' width='45%' />
 <img src='img/Distr_Frequ.png' alt=' ' width='45%	' /></p>
+</div>
 
-<p>All variables are skewed to the right, having many low values. However, this shouldn't be a problem for the analysis as the variables still comprise a decent range of values and don't pile up in just one place. Regarding the dependent variable Proportion_Rowing, many people do not mention a single rowing interpretation and there seems to be a single case with almost 80% of such words.</p>
+<p>All variables are skewed to the right, having many low values. However, this shouldn't be a problem for the analysis as the variables still comprise a decent range of values and don't pile up in just one place. Regarding the dependent variable Proportion_Rowing, many people do not mention a single rowing interpretation and there seems to be a single case with almost 80% of such words.<br />
+<a class='btn SPSSinstructions' href="SPSS/img/Results_Explore_All.png">SPSS: Explore variables</a></p>
 
-<p> <a class='btn SPSSinstructions' href="SPSS/img/Results_Explore_All.png">SPSS: Explore variables</a></p>
-
-<p>&nbsp;</p>
 
 <p><h2>Multiple regression</h2></p>
 
@@ -183,14 +178,14 @@ U=593.0, Z=-6.793, p&lt;.001.<br />
 <p><em>Proportion Rowing<sub>i</sub> = β<sub>0</sub> + β<sub>1</sub> Age<sub>i</sub> + β<sub>2</sub> Rowing_Experience_Years<sub>i</sub> + β<sub>3</sub> Days_Since_Rowed<sub>i</sub> + β<sub>4</sub> Times_PerWeek_Rowed<sub>i</sub> + ε<sub>i</sub></em></p>
 
 <p>We restrict our sample to subjects with Condition=’Rower’ (N=215). 
+<br /><a class='btn SPSSinstructions' href="SPSS/img/Results_Select_Cases.png">SPSS: Select Cases</a></p>
 
-<p> <a class='btn SPSSinstructions' href="SPSS/img/Results_Select_Cases.png">SPSS: Select Cases</a></p>
+<p>
+Initially, we can just estimate a full regression with all independent (predictor) variables and no further concerns in order to get a starting point. In a following step, we can then eliminate predictors that do not significantly contribute to our model and are therefore unnecessary. It is also advisable to check if the <a class="assumptions" href="../assumptions/MultipleRegression.html">assumptions</a> of a linear regression are met with our analysis. Our regression yields the following results:</p>
 
-Initially, we can just estimate a full regression with all independent (predictor) variables and no further concerns in order to get a starting point. In a following step, we can then eliminate predictors that do not significantly contribute to our model and are therefore unnecessary. It is also advisable to check if the assumptions of a linear regression are met with our analysis. Our regression yields the following general results:</p>
-
-<p>&nbsp;</p>
-
+<div class="contentbox">
 <table width="100%">
+    <caption>Model summary</caption>
 	<th>R</th><th>R Square</th><th>Adj. R Square</th><th>Std. Error of Estimate</th>
       <tr>
         <td>.345</td>
@@ -200,9 +195,8 @@ Initially, we can just estimate a full regression with all independent (predicto
       </tr>
 </table>
 
-<p>&nbsp;</p>
-
 <table width="100%">
+    <caption>ANOVA</caption>
 	<th></th><th>Sum of Squares</th><th>df</th><th>Mean Square</th><th>F</th><th>Sig.</th>
       <tr>
         <td>Regression</td>
@@ -230,9 +224,8 @@ Initially, we can just estimate a full regression with all independent (predicto
       </tr>
 </table>
 
-<p>&nbsp;</p>
-
 <table width="100%">
+    <caption>Parameter estimates</caption>
 	<th>Coefficient</th><th>B</th><th>Std. Error</th><th>Beta</th><th>t</th><th>Sig.</th><th>Tolerance</th><th>VIF</th>
       <tr>
         <td>Constant</td>
@@ -285,8 +278,7 @@ Initially, we can just estimate a full regression with all independent (predicto
         <td>1.103</td>
       </tr>
 </table>
-
-<p>&nbsp;</p>
+</div>
 
 <p>We interpret the results in the following way:<br>
 
@@ -296,18 +288,50 @@ Initially, we can just estimate a full regression with all independent (predicto
 
 <p>The third table shows the predictors and whether they significantly contribute to the model. If we look at the t- and significance-values, we can see that the p-values for Age, Rowing_Experience_Years and Times_PerWeek are p&gt;.05. However, for Times_PerWeek the value is very close to this threshold. Strictly speaking, we can’t say that these two variables have an influence on the dependent variable that is significantly different from zero. Days_Since_Rowed is the only significant variable with a B-value of -1.392, which tells us that the further your recent rowing experience has been in the past, the fewer words you associate with rowing. We can interpret the B-value in the following way: holding everything else constant, every additional day that the subject hasn’t rowed causes 1.392% less word associations with rowing.</p>
 
-<p>As already indicated, it is worth checking our independent variables, their correlation and their individual relation with the dependent variable to detect potential misinterpretations or further areas for investigation.</p>
+<p>As already indicated, it is worth checking our independent variables, their correlation and their individual relation with the dependent variable to detect potential misinterpretations or further areas for investigation.<br /><a class='btn SPSSinstructions' href="SPSS/img/Results_Regression_Enter.png">SPSS: Full Regression</a></p>
 
-<p> <a class='btn SPSSinstructions' href="SPSS/img/Results_Regression_Enter.png">SPSS: Full Regression</a></p>
 
-<p>&nbsp;</p>
+<p><h3>Regression assumptions</h3></p>
+
+<p>Before putting too much faith in the results of the analysis, it is good practice to check whether the <a class="assumptions" href="../assumptions/MultipleRegression.html">assumptions</a> of the regression analysis hold. Note that, as the assumptions concern the residuals of the model, this should really be done for any model that is estimated. In this section, we will focus on the full regression reported abova</p>
+
+<p><h4>Linearity</h4></p>
+
+<p>Let's take a look at the assumptions of the regression and whether there could be violations. We'll start off very basically by examining whether we can assume a linear relationship between dependent and independent variables. Nonlinearity is usually most evident in a plot of the observed versus predicted values or a plot of residuals versus predicted values, which are a part of our regression output. However, linearity is hard to detect and one should always try alternative models if they match the theoretic assumptions about the relations of the variables.</p>
+
+<div class="contentbox">
+<p><img src='img/Obs_Pred.png' alt=' ' width='45%' />
+<img src='img/Pred_Resid.png' alt=' ' width='45%' /></p>
+</div>
+
+<p>The points should be symmetrically distributed around a diagonal line in the left plot or in a circular fashion around the centre in the right plot. Look carefully for evidence of a "bowed" pattern, indicating that the model makes systematic errors whenever it is making unusually large or small predictions. The model makes obviously wrong predictions for those people who do not mention a single rowing interpretation. We can also see that the standardized predicted value for one case is particularly odd with a value of about -4.</p>
+
+<h4>Regression residuals (errors)</h4>
+
+<p>A regression model of good quality should have normally distributed, homoscedastic residuals. For homoscedasticity and normally distributed errors, we can look at some plots. Usually, we get a plot of residuals vs. predicted values with our output (since we ticked the box in the regression) that can tell us about the relationship of those.</p>
+
+<div class="contentbox">
+<p><img src='img/Pred_Resid.png' alt=' ' width='45%' />
+<img src='img/Distr_Resid.png' alt=' ' width='45%	' /></p>
+</div>
+
+<p>The two plots suggest that the errors are not normally distributed and that there is potentially a problem with heteroscedasticity. The Shapiro-Wilk and Kosmogorov-Smirnoff test are both significant for the standardized residuals, indicating that these aren't normally distributed. However, except for the peak around -1 for the standardized residuals and the single case around -4 for the standardized predicted value, the plots do not look very unusual. This case on the far left hand side has a very low prediction according to our model for the dependent variable, but at the same time, the actual value for this subject is also low. Therefore, this case is not an outlier that produces a lot of error, but an outlier that gets an unusually low prediction compared to all other subjects. If we exclude this case from the analysis, the results aren't affected in any way.</p>
+
+<h4>Multicollinearity</h4>
+
+<p>We have included the tolerance and VIF values in our regression tables, which do not indicate that there is a major problem with our predictors. Tolerance and VIF (1/tolerance) should be close to 1. In order to explore multicollinearity some more, we can simply look at the correlations of our independent variables. As long as VIF&lt;5 (tolerance&gt;.20) there is no need for serious concern.</p>
+
+<h4>Outliers</h4>
+
+<p></p>
 
 <p><h3>Reduced regression</h3></p>
 
 <p>We can use the backwards approach in SPSS, where the software stepwise excludes variables that are not necessarily needed in the model. If some variables are removed, others might get different estimates and significances for the newer, slimmer model. By using the backwards method, we yield:</p>
 
-<p>&nbsp;</p>
+<div class="contentbox">
 <table width="100%">
+    <caption>Model summary</caption>
     <th>R</th>
     <th>R Square</th>
     <th>Adj. R Square</th>
@@ -320,9 +344,8 @@ Initially, we can just estimate a full regression with all independent (predicto
   </tr>
 </table>
 
-<p>&nbsp;</p>
-
 <table width="100%">
+    <caption>ANOVA</caption>
     <th></th>
     <th>Sum of Squares</th>
     <th>df</th>
@@ -355,9 +378,8 @@ Initially, we can just estimate a full regression with all independent (predicto
     </tr>
 </table>
 
-<p>&nbsp;</p>
-
 <table width="100%">
+    <caption>Parameter estimates</caption>
     <th>Coefficient</th>
     <th>B</th>
     <th>Std. Error</th>
@@ -397,82 +419,25 @@ Initially, we can just estimate a full regression with all independent (predicto
     <td>1.034</td>
     </tr>
 </table>
+</div>
 
-<p>&nbsp;</p>
+<p>We obtain similar results to the full regression, although the p-value for Times_PerWeek is now exactly on the border of significance. Note that the estimates of the effects of predictors, and their significance, are affected by the other predictors in a model when the predictors are not completely independent. Using a backwards stepwise procedure, we have arrived at a simpler model, which should be preferred to a more complex one if the complexity is not justified by additional explanatory power.  Additional options are, for example, to modify some of the independent variables or to calculate a regression for relational factors or non-linear relationships.<br />
+<a class='btn SPSSinstructions' href="SPSS/img/Results_Regression_Back.png">SPSS: Reduced Regression</a></p>
 
-<p>We obtain similar results to the full regression, although the p-value for Times_PerWeek is now exactly on the border of significance. Note that the estimates of the effects of predictors, and their significance, are affected by the other predictors in a model when the predictors are not completely independent. Using a backwards stepwise procedure, we have arrived at a simpler model, which should be preferred to a more complex one if the complexity is not justified by additional explanatory power.  Additional options are, for example, to modify some of the independent variables or to calculate a regression for relational factors or non-linear relationships.</p>
 
-<p> <a class='btn SPSSinstructions' href="SPSS/img/Results_Regression_Back.png">SPSS: Reduced Regression</a></p>
-
-<p>&nbsp;</p>
-
-<p><h2>Regression assumptions</h2></p>
-
-<p>In this section, we will focus on the full regression of the form:</p>
-
-<p><em>Proportion Rowing<sub>i</sub> = β<sub>0</sub> + β<sub>1</sub> Age<sub>i</sub> + β<sub>2</sub> Rowing_Experience_Years<sub>i</sub> + β<sub>3</sub> Days_Since_Rowed<sub>i</sub> + β<sub>4</sub> Times_PerWeek_Rowed<sub>i</sub> + ε<sub>i</sub></em></p>
-
-<p>&nbsp;</p>
-
-<p><h3>Linearity</h3></p>
-
-<p>Let's take a look at the assumptions of the regression and whether there could be violations. We'll start off very basically by examining whether we can assume a linear relationship between dependent and independent variables. Nonlinearity is usually most evident in a plot of the observed versus predicted values or a plot of residuals versus predicted values, which are a part of our regression output. However, linearity is hard to detect and one should always try alternative models if they match the theoretic assumptions about the relations of the variables.</p>
-
-<p><img src='img/Obs_Pred.png' alt=' ' width='45%' />
-<img src='img/Pred_Resid.png' alt=' ' width='45%' /></p>
-
-<p>The points should be symmetrically distributed around a diagonal line in the left plot or in a circular fashion around the centre in the right plot. Look carefully for evidence of a "bowed" pattern, indicating that the model makes systematic errors whenever it is making unusually large or small predictions. The model makes obviously wrong predictions for those people who do not mention a single rowing interpretation. We can also see that the standardized predicted value for one case is particularly odd with a value of about -4.</p>
-
-<p>&nbsp;</p>
-
-<h3>Predictor variables</h3>
-
-<p>You can explore the values of the independent variables in order to check if you have a proper range of values covered (e.g. take care that there is no particular age group missing). Histograms are helpful to examine these things:</p>
-
-<p><img src='img/Distr_Age.png' alt=' ' width='45%' />
-<img src='img/Distr_Exper.png' alt=' ' width='45%' /></p>
-<p><img src='img/Distr_Recency.png' alt=' ' width='45%' />
-<img src='img/Distr_Frequ.png' alt=' ' width='45%	' /></p>
-
-<p>With the help of the Kolmogorov-Smirnoff and Shapiro-Wilk test, we can assert that neither of these variables is normally distributed. They all are skewed to the right with the Days_Since_Rowed having a peculiar peak at the value of 7. Perhaps many participants participated in the study just before or just after their regular weekly rowing day.</p>
-
-<p>&nbsp;</p>
-
-<h3>Multicollinearity</h3>
-
-<p>We have included the tolerance and VIF values in our regression tables, which do not indicate that there is a major problem with our predictors. Tolerance and VIF (1/tolerance) should be close to 1. In order to explore multicollinearity some more, we can simply look at the correlations of our independent variables. As long as VIF&lt;5 (tolerance&gt;.20) there is no need for serious concern.</p>
-
-<p>&nbsp;</p>
-
-<h3>Regression errors</h3>
-
-<p>A regression model of good quality should have normally distributed, homoscedastic errors. For homoscedasticity and normally distributed errors, we can look at some plots. Usually, we get a plot of residuals vs. predicted values with our output (since we ticked the box in the regression) that can tell us about the relationship of those.</p>
-
-<p><img src='img/Pred_Resid.png' alt=' ' width='45%' />
-<img src='img/Distr_Resid.png' alt=' ' width='45%	' /></p>
-
-<p>The two plots suggest that the errors are not normally distributed and that there is potentially a problem with heteroscedasticity. The Shapiro-Wilk and Kosmogorov-Smirnoff test are both significant for the standardized residuals, indicating that these aren't normally distributed. However, except for the peak around -1 for the standardized residuals and the single case around -4 for the standardized predicted value, the plots do not look very unusual. This case on the far left hand side has a very low prediction according to our model for the dependent variable, but at the same time, the actual value for this subject is also low. Therefore, this case is not an outlier that produces a lot of error, but an outlier that gets an unusually low prediction compared to all other subjects. If we exclude this case from the analysis, the results aren't affected in any way.</p>
-
-<p>&nbsp;</p>
 
 <h2>Non-linear regressions</h2>
 
-<p>We could also check whether there is a non-linear, maybe quadratic relationship between the predictors and the dependent variable. One can frequently observe that variables which measure a certain timespan, such as age or experience, show peculiar behaviour for particularly high values. Therefore, we transform age and experience to control for quadratic effects. First, we centre these variables to reduce the collinearity between quadratic and non-quadratic variables (e.g. Age and Age2 would otherwise be highly correlated). Therefore, we create two new centred variables, for Age and Rowing_Experience_Years, where we subtract the mean (Variablecen=Variable-Mean(Variable)). Following this, we can square the new centred variables and add these to our regression (Variablesquared=Variablecen2).
-
-<table class="instr" width="350px">
-<col width="150px"><col width="50px"><col width="150px">
-	<tr>
-		<td class="instr"><p> <a class='btn SPSSinstructions' href="SPSS/img/Results_Descriptives.png">SPSS: Descriptives</a></p></td>
-        <td class="instr"></td>
-        <td class="instr"><p><a class='btn SPSSinstructions' href="SPSS/img/Results_Center.png">SPSS: Center Variables</a></p></td>
-    </tr>
-</table>
+<p>We could also check whether there is a non-linear, maybe quadratic relationship between the predictors and the dependent variable. One can frequently observe that variables which measure a certain timespan, such as age or experience, show peculiar behaviour for particularly high values. Therefore, we transform age and experience to control for quadratic effects. First, we centre these variables to reduce the collinearity between quadratic and non-quadratic variables (e.g. Age and Age2 would otherwise be highly correlated). Therefore, we create two new centred variables, for Age and Rowing_Experience_Years, where we subtract the mean (Variablecen=Variable-Mean(Variable)). Following this, we can square the new centred variables and add these to our regression (Variablesquared=Variablecen2).<br />
+<a class='btn SPSSinstructions' href="SPSS/img/Results_Descriptives.png">SPSS: Descriptives</a>
+<a class='btn SPSSinstructions' href="SPSS/img/Results_Center.png">SPSS: Center Variables</a>
+</p>
 
 This results in the following regression model:</p>
 
-<p>&nbsp;</p>
-
+<div class="contentbox">
 <table width="100%">
+    <caption>Model summary</caption>
     <th>R</th>
     <th>R Square</th>
     <th>Adj. R Square</th>
@@ -488,6 +453,7 @@ This results in the following regression model:</p>
 <p>&nbsp;</p>
 
 <table width="100%">
+    <caption>ANOVA</caption>
     <th></th>
     <th>Sum of Squares</th>
     <th>df</th>
@@ -520,9 +486,8 @@ This results in the following regression model:</p>
     </tr>
 </table>
 
-<p>&nbsp;</p>
-
 <table width="100%">
+    <caption>Parameter estimates</caption>
     <th>Coefficient</th>
     <th>B</th>
     <th>Std. Error</th>
@@ -602,15 +567,13 @@ This results in the following regression model:</p>
     <td>1.111</td>
     </tr>
 </table>
-
-<p>&nbsp;</p>
-
+</div>
 
 <p>Interestingly, when controlling for quadratic effects, experience, but not age, becomes significant. The B-values suggest that there is a declining effect for high values of experience, since the Rowing_Experience_Years2 has a negative sign and becomes more influential with larger values. There is still considerable collinearity between experience and its squared equivalent, but a rule-of-thumb suggests that Tolerance values greater than 0.2, respectively VIF smaller 5, indicate acceptable collinearity. If we try the same regression with non-centred values, the collinearity will not fulfil these criteria. The backwards regression can help us to cancel out unnecessary variables and the model reduces to:</p>
 
-<p>&nbsp;</p>
-
+<div class="contentbox">
 <table width="100%">
+    <caption>Model summary</caption>
     <th>R</th>
     <th>R Square</th>
     <th>Adj. R Square</th>
@@ -623,9 +586,8 @@ This results in the following regression model:</p>
   </tr>
 </table>
 
-<p>&nbsp;</p>
-
 <table width="100%">
+    <caption>ANOVA</caption>
     <th></th>
     <th>Sum of Squares</th>
     <th>df</th>
@@ -658,9 +620,9 @@ This results in the following regression model:</p>
     </tr>
 </table>
 
-<p>&nbsp;</p>
 
 <table width="100%">
+    <caption>Parameter estimates</caption>
     <th>Coefficient</th>
     <th>B</th>
     <th>Std. Error</th>
@@ -720,8 +682,7 @@ This results in the following regression model:</p>
     <td>1.042</td>
     </tr>
 </table>
-
-<p>&nbsp;</p>
+</div>
 
 <p>Although the Times_PerWeek_Rowed doesn’t quite meet the .05 significance-barrier, we yield a comprehensive and coherent model to describe the interpretation of words in a rowing context. According to our estimations, experience leads people to more frequently interpret words in a rowing context, however, for particularly low and high values of experience, this effect is weakened through the negative quadratic term. Additionally, the time that has passed since the last rowing experience is crucial and people who have rowed more recently, interpret more words in a rowing context. Furthermore, the rowing frequency of people is decisive and causes more frequent rowers to use more rowing interpretations.</p>
 
@@ -743,7 +704,8 @@ This results in the following regression model:</p>
             </div>
             
             </p>
-            -->        </p>
+            --> 
+            <p align="right"><a class="btn btn-lg btn-info" href="conclusion.html">Conclusion &raquo;</a></p>
         </div>  
 
     </div>
@@ -751,7 +713,7 @@ This results in the following regression model:</p>
             <hr>
 
             <footer>
-                <p>&copy; Company 2012</p>
+                <p>&copy; UCL 2013-2014</p>
             </footer>
 
         </div> <!-- /container -->
