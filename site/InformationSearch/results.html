@@ -49,8 +49,971 @@ conditions respectively. From this, we can see that ages of participants
 in both conditions differ significantly from the normal 
 distribution. This violation of the assumptions may bias the test 
 results and as such, the non-parametric equivalent of the independent 
-samples t-test (Mann-Whitney U Test) could be used.<br />
+samples t-test (Mann-Whitney U Test) could be used. The results of the 
+Mann-Whitney test show that there are no significant differences 
+between the groups in terms of their age (<i>U</i>=1294, <i>p</i>=.856).<br />
 <a class='btn SPSSinstructions' href="SPSS/mann-whitney.html">SPSS: Mann-Whitney</a></p>
+
+<p>An independent samples t test also shows there is no significant 
+difference between the groups (<i>t</i>(100)=0.380, <i>p</i>=.705). 
+However, there may still be problems with the groups as participants 
+come from a very limited age range (the majority are 18-22). This will 
+ultimately affect the generalizability of these results to the wider 
+population. This is an issue with many studies in psychology, which tend 
+to rely on student samples.</p>
+
+<p>Calculating the frequency of each gender 
+of participants can be informative regarding whether there are equal 
+amounts of males and females in either group. In this sample, only 
+19.2% of participants are male, so the gender of participants 
+is clearly unbalanced. This may affect the generalisabilty of the results. <br />
+<a class='btn SPSSinstructions' href="SPSS/Frequencies.html">SPSS: 
+Frequencies</a></p>
+
+<p>It is also important to test 
+whether there is an imbalance between the participants allocated to the 
+different conditions. Whilst the effect of gender can be accounted for 
+in some analyses by using it as a covariate, it is still not ideal as a 
+more complex model has reduced statistical power (through reducing 
+degrees of freedom) to detect an effect. We can test for whether there 
+are differences between the conditions in terms of the numbers of males 
+and females in each group by using a Chi-square test. Note at this stage 
+that if participants were allocated to the 'same' condition in the 
+location scenario, they were then allocated to the 'different' condition 
+in the time scenario, so we do not need to test each of these scenarios 
+separately to see if there is a difference. Before performing a Chi-square
+test, you should check whether your data conform to its 
+<a class="assumptions" href="../assumptions/ChiSquare.html">assumptions</a>.
+It is clear there is no significant difference between the 'same' 
+and 'different' conditions in terms of the numbers of males and females 
+in each group (&chi;<sup>2</sup>(1,103)=0.083, <i>p</i>=.774). 
+Thus, whilst the substantially smaller number of males compared to 
+females in the experiment as a whole is likely to reduce the 
+generalizability of the results, there are no systematic biases 
+whereby all males are allocated to one condition which could contaminate 
+results. 
+<br />
+<a class='btn SPSSinstructions' href="SPSS/ChiSquare.html">SPSS: 
+Chi-square</a></p>.
+
+<h2>Manipulation checks</h2>
+
+<p>The probability ratings for question G provides information to check 
+whether the participants' perception of witness reliabilities differed 
+between the 'same' and 'different' condition in both the 'time' and 
+'location' scenario. An independent samples t-test can be used to test 
+for differences between these ratings for the 'same' and 'different' 
+condition in each scenario. First, it has to be ensured that the 
+assumptions for an independent t-test are met. These, plus the 
+instructions on how to complete these on SPSS are detailed above.
+From this we can see that the distribution of the data in the 'same' 
+condition of the 'location' scenario differs significantly from the normal 
+distribution <i>W</i>(55)=0.944, <i>p</i>=.012, while there is no cause 
+for concern in the 'different' condition, <i>W</i>(49)=0.972, 
+<i>p</i>=.285. For the 'time' scenario, neither the 'same' [<i>W</i>(49)=0.972, 
+<i>p</i>=.294] nor the 'different' condition [<i>W</i>(55)=0.958, 
+<i>p</i>=.053] differs significantly from Normality, although the 
+'different' condition is not far off. Although we can use a t-test in 
+most cases, especially as the t-test is relatively robust against 
+small deviations from Normality, perhaps a non-parametric test such as 
+the Mann-Whitney test is a more cautious alternative. </p>
+
+<p>The Mann Whitney tests show there is a significant difference between 
+the 'same' and 'different' condition in the location scenario 
+(<i>U</i>=494, <i>p</i>&lt;.001), but that this is not the case in the 
+time scenario (<i>U</i>=1192.5, <i>p</i>=.312). 
+This demonstrates that participants were not sensitive to the 
+manipulation in the 'time' scenario. Similar results are obtained
+when this is tested with an independent samples t-test (TODO).</p>
+
+<p>Due to the failure of the 'time' scenario to lead to differences
+in the judged reliability of the witnesses, for this scenarion, 
+we will analyse data from Experiment 2. In Experiment 2, 
+the differences in time between the witness sightings in the 'same' and 
+'different' condition were increased, and the participants were also 
+provided with a diagrammatic aid. The check on the sample 
+characteristics will have to be completed as before, in addition to the 
+manipulation check. Tests on the sample characteristics show that there are no 
+significant differences between the allocation of participants to the 
+conditions 'same' or ‘different’ in terms of age 
+(<i>U</i>=121, <i>p</i>=.468), and in terms of the distribution of 
+gender (&chi;<sup>2</sup>(1,34)=0.326, <i>p</i>=.568). However, the 
+criticisms of the groups in terms of having a narrow age range and skew 
+in the gender (as above) affecting generalizability apply here also.</p>
+
+<p>The manipulation check demonstrates that participants were sensitive 
+to the diagnostic value of the information as there was a significant 
+difference between ‘same’ and ‘different’ conditions the ratings for 
+question G in the probability judgment questionnaire (<i>U</i>=65.5, 
+<i>p</i>=.007).
+</p>
+
+<p>Throughout the remainder of this section, 
+we will now use the data from Experiment 1 for the 'location' scenario, 
+and the data from Experiment 2 for the 'time' scenario.</p>
+
+<h2>Witness choices</h2>
+
+<p>Visualisation of the data is often a useful first step to analysis. 
+The main variable of interest here is the choice of witness, which is 
+a categorical variable. A useful plot for such a variable is a bar chart 
+showing the frequency of choices. These bar charts below demonstrate, 
+for each of the scenarios and conditions, participants' choices of 
+either witness 2 or witness 4. These graphs indicate that the results 
+are in line with the expectations: participants choose witness 2 more 
+often in the “different” compared to the “same” condition. Whether this 
+efffect of condition is significant will be explored next in a logistic 
+regression analysis.
+
+<div class="contentbox">
+<figure>
+    <table>
+    <tr>
+        <td>
+            <img src='img/BarChart_location.gif' alt='\'Location\' scenario' width='100%' />
+            <figcaption>
+            <h5>'Same' Condition</h5>
+            </figcaption>
+        </td>
+        <td>
+            <img src='img/BarChart_time.png' alt='\'Time\' scenario' width='100%' />
+            <figcaption>
+            <h5>'Different' Condition</h5>
+            </figcaption>
+        </td>
+    </tr>
+    </table>
+    <figcaption>
+    <h5>Figure 1. Witness choices in the two scenarios.</h5>
+    </figcaption>
+</figure>
+</div>
+
+
+<h3>Logistic regression</h3>
+
+
+<p>As witness choice is a dichotomous variable (a categorical variable with two levels), we will use logistic regression rather than a linear regression or a t-test to assess the effect of condition. In this logistic regression, we will predict witness choice (dependent variable) as a function of condition (categorical predictor). The benefit of logistic regression is that it does not require satisfaction of many typical assumptions associated with linear models, such as linearity, homoscedascity, or normality of the data.</p>
+ 
+<p>In this logistic regression analysis, we model the log odds of witness choice as a linear function of the predictors. SPSS uses the first level of the dependent variable (here, 'witness 2') as the numerator in these odds, and the second level as the denominator. SPSS allows the inclusion of categorical predictors in the model by constructing dummy coded predictor variables. In the construction of these dummy variables, the last level of the categorical predictor (the "same" condition here) is used as the reference group. The resulting model can be formally specified in the following equation
+
+$$\log \left(\frac{P(\text{witness} = 2)}{1 -  P(\text{witness} = 2)}\right) = \beta_0 + \beta_1 X_{1i} + \ldots \beta_k X_{ik}$$
+
+The coefficients &beta;<sub><i>j</i></sub> reflects each predictors' independent contribution to the log odds, and as such can be seen as a measure of the strength of the relationship between the dependent variable and the predictor.</p> 
+
+<p>The log likelihood is the probability of observing the data under the null hypothesis (all coefficients in the regression equation take the value zero), and the alternative hypothesis (the model with the predictors gives significantly better predictions than chance). From this statistic, we can complete the likelihood ratio test, which is a test of the difference between the alternative hypothesis model, with the null hypothesis model subtracted from this. In simpler terms, this tells us whether the inclusion of the predictors improved the model to an extent where it is significantly different from chance.</p>
+
+<p>SPSS compares the model to a null model with only an intercept. This corresponds to the model in which the coefficients (&beta;<sub><i>j</i></sub>) for all predictors are set to 0. SPSS first reports the results of this null model. The "classification table" shows the predictions arising from the null model and 
+how they correspond to the observed witness choices.<br />
+<a class='btn SPSSinstructions' href="SPSS/logistic.html">SPSS: Logistic regression</a></p>
+</p>
+
+<!-- <h4>Results: Location</h4> -->
+
+<p>
+<TABLE WIDTH=602 CELLPADDING=0 CELLSPACING=0>
+	<COL WIDTH=70>
+	<COL WIDTH=147>
+	<COL WIDTH=81>
+	<COL WIDTH=88>
+	<COL WIDTH=88>
+	<COL WIDTH=128>
+	<TR>
+		<TD COLSPAN=6 WIDTH=602 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1px solid #000001; border-left: none; border-right: none; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB"><B>Block
+			0: Classification Table</B></SPAN></FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=3 COLSPAN=3 WIDTH=299 STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Observed</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD COLSPAN=3 WIDTH=303 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Predicted</SPAN></FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2 WIDTH=175 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Location_Choice</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=128 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Percentage
+			Correct</SPAN></FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=88 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">2</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=88 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">4</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=128 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><BR>
+			</P>
+		</TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=3 WIDTH=70 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Step
+			0</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD ROWSPAN=2 WIDTH=147 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Location_Choice</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=81 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">2</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=88 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">0</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=88 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">47</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=128 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">.0</SPAN></FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=81 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">4</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=88 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">0</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=88 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">57</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=128 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">100.0</SPAN></FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2 WIDTH=229 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Overall
+			Percentage</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=88 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><BR>
+			</P>
+		</TD>
+		<TD WIDTH=88 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><BR>
+			</P>
+		</TD>
+		<TD WIDTH=128 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB"><SPAN STYLE="background: #ffff00">54.8</SPAN></SPAN></FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+</TABLE>
+</p>
+
+<p>As there are more Witness 4 choices than Witness 2 choices, the best prediction without taking any predictors into account would be to predict a Witness 4 choice for every participant. The classification table above tells us that this prediction is correct 54.8% of the time.</p>
+
+<p>The null model includes only an intercept (constant). The intercept is estimated to as 0.193, which is not significantly different from 0.</p>
+
+<p>
+<TABLE WIDTH=602 CELLPADDING=0 CELLSPACING=0>
+	<COL WIDTH=61>
+	<COL WIDTH=79>
+	<COL WIDTH=77>
+	<COL WIDTH=77>
+	<COL WIDTH=77>
+	<COL WIDTH=77>
+	<COL WIDTH=77>
+	<COL WIDTH=77>
+	<TR>
+		<TD COLSPAN=8 WIDTH=602 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1px solid #000001; border-left: none; border-right: none; padding: 0cm">
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB"><B>Variables
+			in the Equation</B></SPAN></FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD COLSPAN=2 WIDTH=140 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><BR>
+			</P>
+		</TD>
+		<TD WIDTH=77 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">B</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=77 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">S.E.</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=77 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Wald</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=77 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">df</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=77 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Sig.</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=77 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Exp(B)</SPAN></FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=61 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Step
+			0</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=79 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Constant</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=77 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">.193</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=77 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">.197</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=77 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">.959</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=77 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">1</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=77 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">.328</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=77 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">1.213</SPAN></FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+</TABLE>
+</p>
+
+<p>The table with information about the variables which are not included in the model gives information regarding whether the inclusion of condition (ie,
+‘same’ or ‘different’) in the model would significantly improve the model's predictions, which it would.</p>
+
+<TABLE WIDTH=602 CELLPADDING=0 CELLSPACING=0>
+	<COL WIDTH=69>
+	<COL WIDTH=91>
+	<COL WIDTH=183>
+	<COL WIDTH=86>
+	<COL WIDTH=86>
+	<COL WIDTH=86>
+	<TR>
+		<TD COLSPAN=6 WIDTH=602 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1px solid #000001; border-left: none; border-right: none; padding: 0cm">
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB"><B>Variables
+			not in the Equation</B></SPAN></FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD COLSPAN=3 WIDTH=343 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><BR>
+			</P>
+		</TD>
+		<TD WIDTH=86 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Score</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=86 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">df</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=86 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Sig.</SPAN></FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=2 WIDTH=69 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Step
+			0</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=91 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Variables</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=183 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Location_Condition(1)</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=86 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">21.899</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=86 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">1</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=86 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB"><SPAN STYLE="background: #ffff00">.000</SPAN></SPAN></FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2 WIDTH=274 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Overall
+			Statistics</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=86 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">21.899</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=86 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">1</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=86 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">.000</SPAN></FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+</TABLE>
+
+
+<p>Block 1 refers to the model with the predictors included. Classification improves to 73.1% correct when we include the predictor variable of 'condition' in the model. The estimated slope for the dummy variable which codes for condition is positive and significant, indicating that there were significantly more Witness 4 choices in the "same" compared to the "different" condition.</p>
+
+<p>
+<TABLE WIDTH=602 CELLPADDING=0 CELLSPACING=0>
+	<COL WIDTH=70>
+	<COL WIDTH=147>
+	<COL WIDTH=81>
+	<COL WIDTH=88>
+	<COL WIDTH=88>
+	<COL WIDTH=128>
+	<TR>
+		<TD COLSPAN=6 WIDTH=602 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1px solid #000001; border-left: none; border-right: none; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB"><B>Block
+			1: Classification Table</B></SPAN></FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=3 COLSPAN=3 WIDTH=299 STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Observed</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD COLSPAN=3 WIDTH=303 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Predicted</SPAN></FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2 WIDTH=175 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Location_Choice</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=128 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Percentage
+			Correct</SPAN></FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=88 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">2</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=88 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">4</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=128 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><BR>
+			</P>
+		</TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=3 WIDTH=70 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Step
+			1</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD ROWSPAN=2 WIDTH=147 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Location_Choice</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=81 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">2</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=88 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">34</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=88 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">13</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=128 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">72.3</SPAN></FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=81 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">4</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=88 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">15</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=88 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">42</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=128 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">73.7</SPAN></FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2 WIDTH=229 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Overall
+			Percentage</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=88 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><BR>
+			</P>
+		</TD>
+		<TD WIDTH=88 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><BR>
+			</P>
+		</TD>
+		<TD WIDTH=128 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB"><SPAN STYLE="background: #ffff00">73.1</SPAN></SPAN></FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+</TABLE>
+</p>
+
+<p>
+<TABLE WIDTH=602 CELLPADDING=0 CELLSPACING=0>
+	<COL WIDTH=74>
+	<COL WIDTH=177>
+	<COL WIDTH=55>
+	<COL WIDTH=59>
+	<COL WIDTH=59>
+	<COL WIDTH=47>
+	<COL WIDTH=59>
+	<COL WIDTH=71>
+	<TR>
+		<TD COLSPAN=8 WIDTH=602 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1px solid #000001; border-left: none; border-right: none; padding: 0cm">
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB"><B>Variables
+			in the Equation</B></SPAN></FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD COLSPAN=2 WIDTH=251 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><BR>
+			</P>
+		</TD>
+		<TD WIDTH=55 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">B</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=59 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">S.E.</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=59 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Wald</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=47 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">df</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=59 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Sig.</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=71 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Exp(B)</SPAN></FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=2 WIDTH=74 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Step
+			1</SPAN></FONT></FONT></FONT><FONT COLOR="#000000"><SUP><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">a</SPAN></FONT></FONT></SUP></FONT></P>
+		</TD>
+		<TD WIDTH=177 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Location_Condition(1)</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=55 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">1.991</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=59 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">.444</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=59 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">20.142</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=47 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">1</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=59 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">.000</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=71 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">7.323</SPAN></FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=177 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Constant</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=55 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">-.818</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=59 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">.310</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=59 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">6.970</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=47 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">1</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=59 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">.008</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=71 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">.441</SPAN></FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=8 WIDTH=602 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border-top: 1px solid #000001; border-bottom: none; border-left: none; border-right: none; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">a.
+			Variable(s) entered on step 1: Location_Condition.</SPAN></FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+</TABLE>
+</p>
+
+
+<p>
+SPSS can add variables to the logistic
+regression model in a stepwise fashion. In this analysis, we consider
+only a single predictor which codes for the "same" vs "different" 
+condition, so we only use one step. 
+The "omnibus tests of model coefficients" reflect
+comparisons between the models at each step, which here shows that 
+the additional predictor significantly improves the model predictions 
+(&chi;<sup>2</sup>(1)=22.694, <i>p</i>&lt;.001). 
+The "Model Summary" table reports other measures regarding the overall
+fit of the model. The "-2 Log likelihood" reflects the
+probability of the data according to the model, and can be used to
+construct a likelihood ratio test similar to the one reported in
+the "Omnibus tests of Model Coefficients" table. The Cox and
+Snell and Nagelkerke R Squared values are interpreted similarly to
+R<sup>2</sup> measures for linear regression. While the omnibus test 
+indicates a drastic improvement in the model predictions due to accounting 
+for condition, a Nagelkerke R<sup>2</sup>=0.262 demonstrates that the 
+overall amount of variance which this model is able to explain is still 
+quite low. 
+</p>
+
+<p>
+<div class="contentbox">
+<TABLE WIDTH=602 CELLPADDING=0 CELLSPACING=0>
+	<COL WIDTH=75>
+	<COL WIDTH=12>
+	<COL WIDTH=15>
+	<COL WIDTH=97>
+	<COL WIDTH=53>
+	<COL WIDTH=6>
+	<COL WIDTH=49>
+	<COL WIDTH=44>
+	<COL WIDTH=15>
+	<COL WIDTH=59>
+	<COL WIDTH=5>
+	<COL WIDTH=42>
+	<COL WIDTH=4>
+	<COL WIDTH=55>
+	<COL WIDTH=71>
+	<TR>
+		<TD COLSPAN=15 WIDTH=602 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB"><B>Omnibus
+			Tests of Model Coefficients</B></SPAN></FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD COLSPAN=4 WIDTH=198 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><BR>
+			</P>
+		</TD>
+		<TD COLSPAN=4 WIDTH=152 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Chi-square</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD COLSPAN=5 WIDTH=125 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">df</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD COLSPAN=2 WIDTH=126 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Sig.</SPAN></FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=3 COLSPAN=3 WIDTH=101 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Step
+			1</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=97 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Step</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD COLSPAN=4 WIDTH=152 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">22.694</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD COLSPAN=5 WIDTH=125 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">1</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD COLSPAN=2 WIDTH=126 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">.000</SPAN></FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=97 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Block</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD COLSPAN=4 WIDTH=152 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">22.694</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD COLSPAN=5 WIDTH=125 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">1</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD COLSPAN=2 WIDTH=126 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">.000</SPAN></FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=97 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Model</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD COLSPAN=4 WIDTH=152 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">22.694</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD COLSPAN=5 WIDTH=125 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">1</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD COLSPAN=2 WIDTH=126 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">.000</SPAN></FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR>
+</TABLE>
+</div>
+</p>
+
+
+<p>
+<div class="contentbox">
+<TABLE WIDTH=602 CELLPADDING=0 CELLSPACING=0>
+	<COL WIDTH=75>
+	<COL WIDTH=12>
+	<COL WIDTH=15>
+	<COL WIDTH=97>
+	<COL WIDTH=53>
+	<COL WIDTH=6>
+	<COL WIDTH=49>
+	<COL WIDTH=44>
+	<COL WIDTH=15>
+	<COL WIDTH=59>
+	<COL WIDTH=5>
+	<COL WIDTH=42>
+	<COL WIDTH=4>
+	<COL WIDTH=55>
+	<COL WIDTH=71>
+    <TR>
+		<TD COLSPAN=15 WIDTH=602 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB"><B>Model summary</B></SPAN></FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+   <TR VALIGN=TOP>
+		<TD COLSPAN=2 WIDTH=86 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Step</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD COLSPAN=4 WIDTH=172 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">-2
+			Log likelihood</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD COLSPAN=5 WIDTH=172 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Cox
+			&amp; Snell R Square</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD COLSPAN=4 WIDTH=172 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">Nagelkerke
+			R Square</SPAN></FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2 WIDTH=86 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=LEFT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">1</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD COLSPAN=4 WIDTH=172 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB"><SPAN STYLE="background: #ffff00">120.518</SPAN></SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD COLSPAN=5 WIDTH=172 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB">.196</SPAN></FONT></FONT></FONT></P>
+		</TD>
+		<TD COLSPAN=4 WIDTH=172 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm">
+			<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0.11cm; margin-right: 0.11cm; widows: 2; orphans: 2">
+			<FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-GB"><SPAN STYLE="background: #ffff00">.262</SPAN></SPAN></FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+</table>
+</div>
+</p>
+
+<p>
+A logistic regression was also completed on the "time" scenario data. Overall, the model with condition as a predictor variable was able to 82.9% of the data correctly. The addition of the predictor coding for condition improved the model with respect to the null model [&chi;<sup>2</sup>(1)=17.85, <i>p</i>&lt;.001]. The Nagelkerke R<sup>2</sup>=0.533 indicates that this model was good fit for the data. The constant term contributed significantly to prediction [<i>Z</i>=5.786, <i>p</i>=.016], as did the addition of the condition as the predictor variable [<i>Z</i>=10.248, <i>p</i>=.001].  
+</p>
+
+<h3>Chi-square test</h3>
+
+<p>As an alternative to a logistic regression analysis, a Chi-squared test can be used to test whether participants' choice of witnesses differs significantly between the conditions. The null hypothesis tested is that witness choice is independent from condition. In
+the location scenario, it is clear that choices people make are not
+independent from condition [&chi;<sup>2</sup>(1)=21.89, <i>p</i>&lt;.001]. This is also the case for the time scenario [&chi;<sup>2</sup>(1)=15.838, <i>p</i>&lt;
+.001].</p>
+
+<h2>Witness ratings</h2>
+
+<h3>Repeated-measures ANOVA</h3>
+
+<p>How the importance ratings for witness 2 and 4 are affected by each condition can be analysed with a repeated measures ANOVA. A repeated measures ANOVA is suitable as each participant rates both witness 2 and witness 4; witness can thus be treated as a within-subjects factor. The condition "same" or "different" is a between subjects factor, and person characteristics such as age and gender can be included as covariates. As usual, before proceeding with the analysis, we
+should consider the <a class="assumptions" href="../assumptions/RMAnova.html">assumptions</a> underlying the test.</p>
+
+<p>It can be useful to plot the data as a histogram initially in order to see if it complies with the assumption of normality.The histograms seem to indicate that the dependent variables are not normally distributed within each condition. Participants seemed reluctant to use the lower ratings. Shapiro-Wilks tests confirmed this suspicion, indicating significant deviations from normality in most cases. Although this may affect the validity of the analysis, ANOVA tends to be quite robust to the violation of their assumptions. The assumption of sphericity tends to be more important. This is tested by Mauchly's test. As the within-factor has only two levels in the present analysis, the assumption of sphericity always holds. </p>
+
+<div class="contentbox">
+<figure>
+    <table>
+    <tr>
+        <td colspan=2>Location scenario</td>
+    </tr>
+    <tr>
+        <td>
+            <img src='img/hist_loc_same_witn2.png' alt='Witness 2 ratings in the location scenario, same condition' width='49%' />
+            <img src='img/hist_loc_same_witn4.png' alt='Witness 4 ratings in the location scenario, same condition' width='49%' />
+            <figcaption>
+            <h5>'Same' Condition</h5>
+            </figcaption>
+        </td>
+        <td>
+            <img src='img/hist_loc_diff_witn2.png' alt='Witness 2 ratings in the location scenario, same condition' width='49%' />
+            <img src='img/hist_loc_diff_witn4.png' alt='Witness 4 ratings in the location scenario, same condition' width='49%' />
+            <figcaption>
+            <h5>'Different' Condition</h5>
+            </figcaption>
+        </td>
+    </tr>
+    
+    <tr>
+        <td colspan=2>Time scenario</td>
+    </tr>
+    <tr>
+        <td>
+            <img src='img/hist_time_same_witn2.png' alt='Witness 2 ratings in the time scenario, same condition' width='49%' />
+            <img src='img/hist_time_same_witn4.png' alt='Witness 4 ratings in the time scenario, same condition' width='49%' />
+            <figcaption>
+            <h5>'Same' Condition</h5>
+            </figcaption>
+        </td>
+        <td>
+            <img src='img/hist_time_diff_witn2.png' alt='Witness 2 ratings in the time scenario, same condition' width='49%' />
+            <img src='img/hist_time_diff_witn4.png' alt='Witness 4 ratings in the time scenario, same condition' width='49%' />
+            <figcaption>
+            <h5>'Different' Condition</h5>
+            </figcaption>
+        </td>
+    </tr>
+    
+    </table>
+    <figcaption>
+    <h5>Figure 2. Witness ratings in the two scenarios.</h5>
+    </figcaption>
+</figure>
+</div>
+
+<p>Despite the deviations from normality, we will proceed with the
+repeated-measures ANOVA, keeping in mind that, although ANOVAs tend
+to be resilient to non-normality, the results may be biased to a
+certain extent.<br />
+<a class='btn SPSSinstructions' href="SPSS/RMAnova.html">SPSS: Repeated-measures ANOVA</a>
+</p>
 
             <!--
              <p>
@@ -82,7 +1045,7 @@ samples t-test (Mann-Whitney U Test) could be used.<br />
             <hr>
 
             <footer>
-                <p>&copy; UCL 2013</p>
+                <p>&copy; UCL 2013-2014</p>
             </footer>
 
         </div> <!-- /container -->
@@ -121,6 +1084,10 @@ samples t-test (Mann-Whitney U Test) could be used.<br />
      
         });
         </script>
+        
+        <script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 <!--
         <script>
